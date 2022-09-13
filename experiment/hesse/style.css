@@ -1,0 +1,13 @@
+/* Styles go here */
+
+/* <style></style> is implied in css file */
+
+/* Select the Cytoscape canvas by name and set basic properties. */
+/* A full-window graph is used to provide the graph with as much space as possible for structures. */
+#cy {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
