@@ -1,1 +1,0 @@
-#Hesse Diagram simulation
