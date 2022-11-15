@@ -160,7 +160,7 @@ cy.on("tap", "edge", function (event) {
             //document.getElementById("demo").innerHTML = 5 + 6;
         }
         else{
-            console.log('TRANSITIVE:\nthere exist a transitive realtion',)
+            console.log('TRANSITIVE:\nthere exist a transitive realtion','color: red')
             //console.log('there exist a transitive realtion')
             //alert("Transitive");
         }  
