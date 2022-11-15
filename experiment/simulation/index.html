@@ -19,45 +19,24 @@
     <p>
         Given bellow is a partial order. Read the instructions given below click the edges that belong to the Hasse Diagram
     </p>
-    <br>
 
-    <style>
-        .collapsible {
-          background-color: #777;
-          color: white;
-          cursor: pointer;
-          padding: 18px;
-          width: 100%;
-          border: none;
-          text-align: left;
-          outline: none;
-          font-size: 15px;
-        }
-        
-        .active, .collapsible:hover {
-          background-color: #555;
-        }
-        
-        .content {
-          padding: 0 18px;
-          display: none;
-          overflow: hidden;
-          background-color: #f1f1f1;
-        }
-    </style>
+
 
     
     <button type="button" class="collapsible">Instructions</button>
     
     <div class="content">
 
-    <p>Click the edges that belong to the Hasse Diagram.</p> 
-    <p>Correct edges turns GREEN.</p>
-    <p>Wrong edges turns RED</p>
-    <p>Refer to the message dispalayed</p>
-    <p>Click NEXT To get new graph</p>
-    
+      <ul>
+        <li>Click the edges that belong to the Hasse Diagram.</li>
+        <li>Correct edges turns GREEN.</li>
+        <li>Wrong edges turns RED.</li>
+        <li>Refer to the message dispalayed</li>
+        <li>Click NEXT to get new graph</li>
+        <li>For better experience collapse instructions befor starting</li>
+      </ul>
     </div>
+
 
 
     <script>
@@ -76,25 +55,7 @@
       });
     }
     </script>
-
-    <style>
-        .container { 
-          height: 200px;
-          position: relative;
-          border: 3px solid green; 
-          
-        }
-        
-        .center {
-          margin: 1px;
-          position: relative;
-          top: 50%;
-          left: 50%;
-          -ms-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-        }
-    </style>
-
+    	<p><br></p>
     <button class="button button1"  onClick="Refresh()">NEXT</button>
 
     <script>
@@ -102,7 +63,6 @@
             window.parent.location = window.parent.location.href;
         }
     </script>
-
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/cytoscape/3.23.0/cytoscape.min.js"></script>
