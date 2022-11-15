@@ -14,7 +14,7 @@ button {
   position: relative;
 }
 button span {
-  position: absolute;
+  position: relative;
   top: 10px;
   left: 0;
 }
@@ -49,4 +49,58 @@ button span {
 
 h1 {
   font-size: 2em;
+}
+
+
+.collapsible {
+  background-color: #777;
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+
+.active, .collapsible:hover {
+  background-color: #555;
+}
+
+.content {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+  background-color: #f1f1f1;
+}
+
+container { 
+  height: 200px;
+  position: relative;
+  border: 3px solid green; 
+  
+}
+
+.center {
+  margin: 1px;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+
+}
+
+ul {
+	list-style:disc ;
+}
+	
+ul li::before {
+	  	
+	color: rgb(0, 0, 0);
+	font-weight: bold;
+	display: inline-block; 
+	width: 1em;
+	margin-left: -1em;
 }
