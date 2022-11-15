@@ -130,7 +130,7 @@ console.log = (message,clr) => {
         $('#console').text(_message,clr)
         window.setTimeout(() => {
           $('#console').text('')
-        }, 700) 
+        }, 1500) 
       }
     }
   
@@ -160,7 +160,7 @@ cy.on("tap", "edge", function (event) {
             //document.getElementById("demo").innerHTML = 5 + 6;
         }
         else{
-            console.log('TRANSITIVE:\nthere exist a transitiverealtion',)
+            console.log('TRANSITIVE:\nthere exist a transitive realtion',)
             //console.log('there exist a transitive realtion')
             //alert("Transitive");
         }  
