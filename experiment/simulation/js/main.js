@@ -1,7 +1,7 @@
-import cytoscape from "cytoscape";
-import dagre from "cytoscape-dagre";
+//import cytoscape from "cytoscape";
+//import dagre from "cytoscape-dagre";
 
-cytoscape.use(dagre);
+//cytoscape.use(dagre);
 
 function getRandomInt(max) {
     return Math.floor(Math.random() * max);
@@ -57,9 +57,6 @@ var cy_edges = relation.edges[i].map((x) => {
 
 var cy = (window.cy = cytoscape({
     container: document.getElementById("cy"),
-    boxSelectionEnabled: false,
-    autounselectify: true,
-    zoomingEnabled: false,
 
     layout: {
         name: "dagre"
@@ -123,50 +120,52 @@ cy.on("click", "edge", function (evt) {
     // console.log(this.source().id());
     // console.log(evt);
 }); */
-console.log = (message) => {
+console.log = (message,clr) => {
     // wait until the console is clear to show next message
     function setMessage (_message) {
       if ($('#console').text()) {
         // if console is not empty, check again in 0.5s
         window.setTimeout(() => { setMessage(_message) }, 500)
       } else {
-        $('#console').text(_message)
+        $('#console').text(_message,clr)
         window.setTimeout(() => {
           $('#console').text('')
-        }, 700) 
+        }, 1500) 
       }
     }
   
     setMessage(message)
   }
   
-
-
-cy.on("tap", "edge", function (evt) {
+cy.on("tap", "edge", function (event) {
     //console.log("clicked " + this.id());
     //console.log(this.source().id(), this.target().id());
-    // console.log(e);
+    //console.log(this.source.id==this.target.id );
+    //console.log(hasse_edges,this.id)
+    //console.log( this.source().id())
     if (hasse_edges.includes(this.id())) {
         this.addClass("green");
-        console.log('CORRECT\nedge is part of hasse diagram')
-        console.log()
+        //console.success('CORRECT\nedge is part of hasse diagram')
+        console.log('CORRECT: edge is part of hasse diagram','color: green');
     } 
 
     else {
         this.addClass("red");
-        if (this.source().id()==this.target().id()){
+        //if ($(this).attr('source').id()==$(this).attr('target').id()){
+        if (this.source().id()  == this.target().id() ){
             //alert("Reflexive / slef loop ");
-            console.log('REFLEXIVE\nthere exist a reflexive realtion')
+            console.log('REFLEXIVE:\nthere exist a reflexive realtion','color: red');
             //console.log('there exist a reflexive realtion')
             //document.write("Reflexive");
             //document.getElementById("demo").innerHTML = 5 + 6;
         }
         else{
-            console.log('TRANSITIVE:\nthere exist a transitiverealtion')
+            console.log('TRANSITIVE:\nthere exist a transitive realtion','color: red')
             //console.log('there exist a transitive realtion')
             //alert("Transitive");
         }  
     }
     //console.log(this.source().id());
     //console.log(evt);
+    
 });
