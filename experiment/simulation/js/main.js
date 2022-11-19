@@ -54,6 +54,8 @@ var cy_edges = relation.edges[i].map((x) => {
     };
 });
 //console.log(cy_edges)
+const observ = document.getElementById("observations");
+//const speed = document.getElementById("speed");
 
 var cy = (window.cy = cytoscape({
     container: document.getElementById("cy"),
@@ -146,7 +148,12 @@ cy.on("tap", "edge", function (event) {
     if (hasse_edges.includes(this.id())) {
         this.addClass("green");
         //console.success('CORRECT\nedge is part of hasse diagram')
-        console.log('CORRECT: edge is part of hasse diagram','color: green');
+        //console.log('CORRECT: edge is part of hasse diagram','color: green');
+        observ.innerHTML = "<font size=4 color=green>" +
+        "<b>Correct</b>" +
+        "</font>" +
+        "<br>"+"edge is part of hasse diagram";
+        
     } 
 
     else {
@@ -154,13 +161,21 @@ cy.on("tap", "edge", function (event) {
         //if ($(this).attr('source').id()==$(this).attr('target').id()){
         if (this.source().id()  == this.target().id() ){
             //alert("Reflexive / slef loop ");
-            console.log('REFLEXIVE:\nthere exist a reflexive realtion','color: red');
+            //console.log('REFLEXIVE:\nthere exist a reflexive realtion','color: red');
+            observ.innerHTML =  "<font size=4 color=red>" +
+            "<b>REFLEXIVE</b>" +
+            "</font>" +
+            "<br>"+"there exist a reflexive realtion";
             //console.log('there exist a reflexive realtion')
             //document.write("Reflexive");
             //document.getElementById("demo").innerHTML = 5 + 6;
         }
         else{
-            console.log('TRANSITIVE:\nthere exist a transitive realtion','color: red')
+            //console.log('TRANSITIVE:\nthere exist a transitive realtion','color: red')
+            observ.innerHTML =  "<font size=4 color=red>" +
+            "<b>TRANSITIVE</b>" +
+            "</font>" +
+            "<br>"+"there exist a transitive realtion";
             //console.log('there exist a transitive realtion')
             //alert("Transitive");
         }  
