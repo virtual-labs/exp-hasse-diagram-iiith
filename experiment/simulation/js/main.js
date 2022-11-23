@@ -14,7 +14,7 @@ var relation = {
         [1,2,3,4]
     ],
     edges: [
-        [ [1, 1],[2, 2],[3, 3],[4, 4],[5, 5],[1, 2],[2, 3],[3, 4],[4, 5],[1, 3],[1, 4],[1, 5],[2, 4],[2, 5],[3, 4],[3, 5],[4, 5] ],
+        [ [1, 1],[2, 2],[3, 3],[4, 4],[5, 5],[1, 2],[2, 3],[3, 4],[4, 5],[1, 3],[1, 4],[1, 5],[2, 4],[2, 5],[3, 5]],
         [[1, 1],[2, 2],[3, 3],[4, 4],[6,6],[12,12],[1,2],[1,3],[1,4],[1,6],[1,12],[2,4],[2,6],[2,12],[3,6],[3,12],[4,12],[6,12]],
         [ [1,1],[2, 2],[3, 3],[4, 4],[1,2],[1,3],[1,4],[2,3],[2,4],[3,4] ]
     ],
@@ -23,6 +23,12 @@ var relation = {
         ["1-2", "2-3", "3-4", "4-5"],
         ["1-2","1-3","2-4","2-6","3-6","4-12","6-12"],
         ["1-2", "2-3", "3-4"],
+
+    ],
+    trans: [
+        {"1-3":"{1-2 , 2-3}", "1-4":"1-2 , 2-3 & 3-4", "1-5":"1-2 , 2-3 , 3-4 & 4-5", "2-4":"2-3 & 3-4","2-5":"2-3 , 3-4 & 4-5","3-5":"3-4 & 4-5"},
+        {"1-4":"1-2 & 2-4", "1-6":"1-2 & 2-6; 1-3 & 3-6", "1-12":"1-2,2-6,6-12; 1-2,2-4,4-12; 1-3,3-6,6-12", "3-12":"3-6,6-12" },
+        {"1-3":"1-2 & 2-3", "1-4":"1-2 , 2-3 & 3-4", "2-4":"2-3 & 3-4"}
 
     ]
 };
@@ -42,7 +48,7 @@ function find_hasse_edges(i) {
 }
 
 var hasse_edges = find_hasse_edges(i);
-
+var trans_msg = relation.trans[i];
 // Create cytoscape nodes
 var cy_nodes = relation.nodes[i].map((x) => {
     return { data: { id: `${x}` } };
@@ -152,7 +158,8 @@ cy.on("tap", "edge", function (event) {
         observ.innerHTML = "<font size=4 color=green>" +
         "<b>Correct</b>" +
         "</font>" +
-        "<br>"+"edge is part of hasse diagram";
+        "<br>"+"edge is part of hasse diagram"+
+        "<br>"+this.id()+" is neither slef loop nor defined by other edges";
         
     } 
 
@@ -165,17 +172,23 @@ cy.on("tap", "edge", function (event) {
             observ.innerHTML =  "<font size=4 color=red>" +
             "<b>REFLEXIVE</b>" +
             "</font>" +
-            "<br>"+"there exist a reflexive realtion";
+            "<br>"+ this.id() + " is a self loop"+
+            "<br>"+"so, there exist a reflexive realtion";
+            
             //console.log('there exist a reflexive realtion')
             //document.write("Reflexive");
             //document.getElementById("demo").innerHTML = 5 + 6;
         }
         else{
             //console.log('TRANSITIVE:\nthere exist a transitive realtion','color: red')
+
+            var msg = trans_msg[this.id()]
             observ.innerHTML =  "<font size=4 color=red>" +
             "<b>TRANSITIVE</b>" +
             "</font>" +
-            "<br>"+"there exist a transitive realtion";
+            "<br>"+"there exist a transitive realtion"+
+            "<br>"+this.id()+" is defined by "+
+            "<br>"+ msg;
             //console.log('there exist a transitive realtion')
             //alert("Transitive");
         }  
