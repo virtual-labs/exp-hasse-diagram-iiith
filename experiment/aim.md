@@ -1,4 +1,7 @@
-### Aim of the experiment dsfsd
+### Aim of the experiment
 
+- To understand definitions of partially ordered relation.
 
-testing
+- To be familiar with commonly occuring partial orders.
+
+- To understand the Hasse Diagram for a parial order.
