@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<title>Hasse daigram: Practice</title>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/virtual-labs/virtual-style@0.0.8-b/css/style.min.css">
+	<link rel="stylesheet" href="./css/main1.css">
+	
+
+</head>
+
+  <body style="padding-left: 150px;padding-right: 150px;padding-top: 20px;">
+
+    <div class="container">
+    <div class="columns is-centered">
+        <div class="column is-one-quarter v-instruction-title">
+            Tasks
+        </div>
+        <div class="column">
+            <div class="v-tabs">
+                <ul>
+                    
+                    <li id="Task2" onclick="window.location.href = 'index.html';">
+                        <a>
+                            select hasse edges
+                        </a>
+                    </li>
+
+                    <li class="is-active" id="Task1">
+                        <a>
+                            Draw hasse diagram
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    </div>
+
+
+
+    <div class="columns is-centered">
+        <div class="column">
+            <div class="v-collapsible-instruction-container v-instruction-container">
+                <div id="instruction-title" class="v-collapsible is-size-5">Instructions<br>Draw Hasse diagram</div>
+                <div class="v-content" style="text-align: left; padding-left: 5%; padding-right: 5%;">
+                    <ul style="list-style: disc;">
+                        <li>Draw hasse edges and click submit.</li>
+                        <li><strong>Change Graph: </strong> to get new graph</li>
+                        <li><Strong>Draw mode ON: </Strong>To enable drawing edges.</li>
+                        <li><Strong>Draw mode off: </Strong>To disable drawing edges.</li>
+                        <li><Strong>start on selected: </Strong>to draw an edge from selected Node.</li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<div class="columns is-centered is-flex-direction-row is-flex-wrap-wrap is-align-content-start">
+    <div class="column is-2-desktop is-12-tablet is-12-mobile">
+        <div class="v-datalist-container" style="height:100%; width:100% ;">
+            <div class="v-datalist-title controls"  id="toolbar">Controls</div>
+            <div class="v-datalist-row">
+                <button class="v-button" onclick="Refresh()">Change Graph</button>
+                <br><br>
+                <button class="v-button" id="start">Start on selected</button>
+                <br><br>
+                <button class="v-button" id="draw-on">Draw mode on</button>
+                <br><br>
+                <button class="v-button" id="draw-off">Draw mode off</button>
+            </div>
+        </div>
+    </div>
+    <div class="column is-8-desktop is-12-tablet is-12-mobile">
+        <div id="circuit-board">
+            <div id="working-area">
+            </div>
+        </div>
+    </div>
+
+<div class="column is-2-desktop is-4-tablet is-12-mobile">
+  <div class="v-datalist-container components-list">
+      <div class="v-datalist-title">Observations</div>
+      <div class="v-datalist-row">
+          <div id="observations"></div>
+      </div>
+       <div class="v-datalist-row">
+			
+			<button class="v-button" id="submit">Submit</button>
+		</div>
+  </div>
+</div>
+
+</div>
+
+<script>
+    function Refresh() {
+        location.reload();
+        //window.parent.location = window.parent.location.href;
+    }
+</script>
+
+    <div id="cy"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/cytoscape/3.23.0/cytoscape.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.10/lodash.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/virtual-labs/virtual-style@0.0.8-b/js/script.js"></script>
+    <script src="./js/cytoscape-edgehandles.js"></script>
+    <script src="./js/main1.js"></script>
+    
+    
+
+</body>
+</html>
