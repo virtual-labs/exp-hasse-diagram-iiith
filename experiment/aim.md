@@ -1,4 +1,3 @@
-
 ### Aim of the experiment
 
 - To understand definitions of partially ordered relation.
