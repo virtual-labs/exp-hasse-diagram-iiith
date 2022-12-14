@@ -50,3 +50,8 @@ As with relations and functions, there is a convenient graphical representation 
 - I Make the graph direction-less—that is, we can assume that the orientations are upwards.
 
 The resulting diagram is far simpler.
+
+![remove self loops](images/selfloop.png)
+![remove ransitive loops](images/transitive.png)
+![remove orientation](images/remove_orientation.png)
+![Hasse](images/hasse.png)
