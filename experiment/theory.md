@@ -22,7 +22,7 @@ We use the notation
 a $'\preccurlyeq'$ b to indicate that (a, b) ∈ R is a partial order and
 a $'\prec'$ b when a a $`\neq`$ b.
 
-#### Comparability Definition
+### Comparability Definition
 The elements a and b of a poset (S, 4) are called comparable if either a $'\preccurlyeq'$ b or b $'\preccurlyeq'$ a. When a, b ∈ S such that neither are comparable, we say that they are incomparable. Looking back at our renovation example, we can see that
 
 - Remove Asbestos $'\prec'$ ai
@@ -30,7 +30,7 @@ for all activities ai. Also,
 - Paint Walls $'\prec'$  Refinish Floors 
 Some items are also incomparable—replacing windows can be done before, after or during the assignment of offices.
 
-#### Total Orders Definition
+### Total Orders Definition
 
 If (S, $'\preccurlyeq'$ ) is a poset and every two elements of S are comparable, S is called a totally ordered set. The relation 4 is said to be a total order.
 
@@ -39,7 +39,7 @@ If (S, $'\preccurlyeq'$ ) is a poset and every two elements of S are comparable,
 - The set of integers over the relation “less than equal to” is a total order; (Z, $\'preccurlyeq'$ ) since for every a, b ∈ Z, it must be the case that
 a $'\preccurlyeq'$ b or b $'\preccurlyeq'$ a.
 
-What happens if we replace $'\preccurlyeq'$ with $'\prec'$ ?
+What happens if we replace $'\preccurlyeq'$ with $'\prec'$
 
 ### Hasse Diagram
 
