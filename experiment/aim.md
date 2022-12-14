@@ -1,4 +1,6 @@
-This experiment is designed to help students understand basic definitions related to Partially
-Ordered Relations and effectiveness of Hasse Diagrams. The student learns the distinction
-between a total order and a partial order.
+- To understand definitions of partially ordered relation.
+
+- To be familiar with commonly occuring partial orders.
+
+- To understand the Hasse Diagram for a parial order.
 

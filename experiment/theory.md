@@ -1,12 +1,12 @@
 ### Link your theory in here
 Consider the recent renovation of Avery Hall. In this process several things had to be done.
 
-    I Remove Asbestos
-    I Replace Windows
-    I Paint Walls
-    I Refinish Floors
-    I Assign Offices
-    I Move in Office-Furniture.
+- I Remove Asbestos
+- I Replace Windows
+- I Paint Walls
+- I Refinish Floors
+- I Assign Offices
+- I Move in Office-Furniture.
 
 Clearly, some things had to be done before others could even begin—Asbestos had to be removed before anything; painting had to be done before the floors to avoid ruining them, etc. On the other hand, several things could have been done concurrently—painting could be done while replacing the windows and assigning office could have been done at anytime. Such a scenario can be nicely modeled using partial orderings.
 
