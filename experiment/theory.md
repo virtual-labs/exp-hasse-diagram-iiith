@@ -44,7 +44,7 @@ What happens if we replace $'\preccurlyeq'$ with $'\prec'$
 ### Hasse Diagram
 
 As with relations and functions, there is a convenient graphical representation for partial orders—Hasse Diagrams. Consider the digraph representation of a partial order—since we know we are dealing with a partial order, we implicitly know that the relation must be reflexive and transitive. Thus we can simplify the graph as follows:
-- 
+
 - I Remove all self-loops.
 - I Remove all transitive edges.
 - I Make the graph direction-less—that is, we can assume that the orientations are upwards.
