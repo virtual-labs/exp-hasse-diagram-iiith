@@ -1,1 +1,1 @@
-## Partial Order and Hasse Diagram
+## Parial Order and Hasse Diagram
