@@ -1,6 +1,6 @@
 
 Consider the recent renovation of  Hall. In this process several things had to be done.
-- 
+
 - I Remove Asbestos
 - I Replace Windows
 - I Paint Walls
