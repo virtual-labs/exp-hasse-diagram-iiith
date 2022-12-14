@@ -45,13 +45,40 @@ What happens if we replace $'\preccurlyeq'$ with $'\prec'$
 
 As with relations and functions, there is a convenient graphical representation for partial orders—Hasse Diagrams. Consider the digraph representation of a partial order—since we know we are dealing with a partial order, we implicitly know that the relation must be reflexive and transitive. Thus we can simplify the graph as follows:
 
-- I Remove all self-loops.
-- I Remove all transitive edges.
-- I Make the graph direction-less—that is, we can assume that the orientations are upwards.
+- Remove all self-loops.
+- Remove all transitive edges.
+- Make the graph direction-less—that is, we can assume that the orientations are upwards.
 
 The resulting diagram is far simpler.
 
 ![remove self loops](images/selfloop.png)
 ![remove ransitive loops](images/transitive.png)
+<br />
 ![remove orientation](images/remove_orientation.png)
 ![Hasse](images/hasse.png)
+
+Of course, you need not always start with the complete relation in the partial order and then trim everything. Rather, you can build a Hasse directly from the partial order
+ ##### Example
+- Draw a Hasse diagram for the partial ordering 
+-       {(a, b) | a | b} 
+- on {1, 2, 3, 4, 5, 6, 10, 12, 15, 20, 30, 60} (these are the divisors of 60)
+
+![Example](images/examplehasse.png)
+
+### Extremal Elements
+We will define the following terms:
+- A maximal/minimal element in a poset (S, $'\preccurlyeq'$).
+- The maximum (greatest)/minimum (least) element of a poset (S, $'\preccurlyeq'$).
+- An upper/lower bound element of a subset A of a poset (S, $'\preccurlyeq'$ ).
+- The greatest upper/least lower bound element of a subset A of a poset (S, $'\preccurlyeq'$).
+- Lattice
+
+#### Maximal Element Definition
+- An element a in a poset (S, $'\prec'$) is called maximal if it is not lessthan any other element in S. That is,
+- $'\exists'$ b ∈ S(a $'\prec'$ b)
+If there is one unique maximal element a, we call it the maximum element (or the greatest element)
+
+#### MInimal Element Definition
+- An element a in a poset (S, $'\preccurlyeq'$) is called minimal if it is not greater than any other element in S. That is,
+- $'\exists'$ b ∈ S(b $'\prec'$ a)
+If there is one unique minimal element a, we call it the minimum element (or the least element).
