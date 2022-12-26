@@ -78,7 +78,8 @@ We will define the following terms:
 - $'\exists'$ b ∈ S(a $'\prec'$ b)
 If there is one unique maximal element a, we call it the maximum element (or the greatest element)
 
-#### MInimal Element Definition
+#### Minimal Element Definition
 - An element a in a poset (S, $'\preccurlyeq'$) is called minimal if it is not greater than any other element in S. That is,
 - $'\exists'$ b ∈ S(b $'\prec'$ a)
+
 If there is one unique minimal element a, we call it the minimum element (or the least element).
