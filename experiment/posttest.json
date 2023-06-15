@@ -27,10 +27,10 @@
         "d": "8"
       },
       "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
+        "a": "7 edges",
+        "b": " ",
+        "c": " ",
+        "d": " "
       },
       "correctAnswer": "a",
       "difficulty": "intermediate"
@@ -47,7 +47,7 @@
         "a": "R is transitive",
         "b": "R is not equivalence relation ",
         "c": "R is only transitive  ",
-        "d": "R is Transitive not equivalence relation  "
+        "d": "R is Transitive not equivalence relation"
       },
       "correctAnswer": "c",
       "difficulty": "Hard"
