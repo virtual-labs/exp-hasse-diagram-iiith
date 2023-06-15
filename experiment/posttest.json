@@ -10,8 +10,10 @@
         "d": "13"
       },
       "explanations": {
-      
-        "c": "A hasse diagram is a graphical rendering of partial order set displayed via the cover realtion of the partial ordered set with an implied upward direction, here the number of hasse edges are 11 "
+        "a": "A hasse diagram is a graphical rendering of partial order set displayed via the cover realtion of the partial ordered set with an implied upward direction, here the number of hasse edges are 11 ",
+        "b": "A hasse diagram is a graphical rendering of partial order set displayed via the cover realtion of the partial ordered set with an implied upward direction, here the number of hasse edges are 11 ",
+        "c": "A hasse diagram is a graphical rendering of partial order set displayed via the cover realtion of the partial ordered set with an implied upward direction, here the number of hasse edges are 11 ",
+        "d": "A hasse diagram is a graphical rendering of partial order set displayed via the cover realtion of the partial ordered set with an implied upward direction, here the number of hasse edges are 11 "
       },
       "correctAnswer": "c",
       "difficulty": "intermediate"
@@ -31,7 +33,7 @@
         "d": "Explanation 2"
       },
       "correctAnswer": "a",
-      "difficulty": "beginner"
+      "difficulty": "intermediate"
     },
     {
       "question": "Let P be the set of all people. Let R be a binary relation on P such that (a, b) is in R if a is a brother of b. Is R symmetric, transitive, an equivalence relation, a partial order relation?",
@@ -48,7 +50,7 @@
         "d": "R is Transitive not equivalence relation  "
       },
       "correctAnswer": "c",
-      "difficulty": "beginner"
+      "difficulty": "Hard"
     }
   ]
 }

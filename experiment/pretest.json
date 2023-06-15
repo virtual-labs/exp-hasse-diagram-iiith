@@ -11,10 +11,10 @@
        
       },
       "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
+        "a": "obeys Reflexive, Transitive and  Anti-symmetric",
+        "b":"obeys Reflexive, Transitive and  Anti-symmetric",
+        "c":"obeys Reflexive, Transitive and  Anti-symmetric",
+        "d":"obeys Reflexive, Transitive and  Anti-symmetric"
       },
       "correctAnswer": "a",
       "difficulty": "beginner"
