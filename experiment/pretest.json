@@ -2,12 +2,13 @@
   "version": 2.0,
   "questions": [
     {
-      "question": "This is a Sample Question 1?",
+      "question": "A poset or partially ordered set A is a pair, ( B,≤ ) of a set B whose elements are called the vertices of A and obeys following rules",
       "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
+        "a": "Reflexive, Transitive and  Anti-symmetric",
+        "b": "Reflexive, symmetric",
+        "c": "Transitive , Anti-symmetric",
+        "d": "Reflexive, Transitive and symmetric"
+       
       },
       "explanations": {
         "a": "Explanation 1  <a href='www.google.com'>here</a>",
@@ -19,20 +20,20 @@
       "difficulty": "beginner"
     },
     {
-      "question": "This is a Sample Question 2?",
+      "question": "___ elements of A are those where a ≤ c in A does not contain elements in c",
       "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
+        "a": "minimal",
+        "b": "maximal",
+        "c": "both a and b",
+        "d": "None of the above"
       },
       "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
+        "a": "Maximal elemets of A are those where a ≤ c in A does not contain elements in c",
+        "b": "Maximal elemets of A are those where a ≤ c in A does not contain elements in c",
+        "c": "Maximal elemets of A are those where a ≤ c in A does not contain elements in c",
+        "d": "Maximal elemets of A are those where a ≤ c in A does not contain elements in c"
       },
-      "correctAnswer": "c",
+      "correctAnswer": "b",
       "difficulty": "beginner"
     }
   ]
