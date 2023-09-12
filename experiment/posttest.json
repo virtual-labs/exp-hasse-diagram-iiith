@@ -18,24 +18,24 @@
     },
     "correctAnswer": "a",
     "difficulty": "beginner"
-  },
-  {
-    "question": "___ elements of A are those where a ≤ c in A does not contain elements in c",
-    "answers": {
-      "a": "minimal",
-      "b": "maximal",
-      "c": "both a and b",
-      "d": "None of the above"
     },
-    "explanations": {
-      "a": "Maximal elemets of A are those where a ≤ c in A does not contain elements in c",
-      "b": "Maximal elemets of A are those where a ≤ c in A does not contain elements in c",
-      "c": "Maximal elemets of A are those where a ≤ c in A does not contain elements in c",
-      "d": "Maximal elemets of A are those where a ≤ c in A does not contain elements in c"
+    {
+      "question": "___ elements of A are those where a ≤ c in A does not contain elements in c",
+      "answers": {
+        "a": "minimal",
+        "b": "maximal",
+        "c": "both a and b",
+        "d": "None of the above"
+      },
+      "explanations": {
+        "a": "Maximal elemets of A are those where a ≤ c in A does not contain elements in c",
+        "b": "Maximal elemets of A are those where a ≤ c in A does not contain elements in c",
+        "c": "Maximal elemets of A are those where a ≤ c in A does not contain elements in c",
+        "d": "Maximal elemets of A are those where a ≤ c in A does not contain elements in c"
+      },
+      "correctAnswer": "b",
+      "difficulty": "beginner"
     },
-    "correctAnswer": "b",
-    "difficulty": "beginner"
-  }
     {
       "question": "Let A={1,2,3,4,6,24,36,72}, Let ≤ be the partial order defined by A≤B if a divides b. Number of edges in the Hasse diagram of (A,≤) is",
       "answers": {
