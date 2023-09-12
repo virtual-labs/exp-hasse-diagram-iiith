@@ -2,36 +2,55 @@
   "version": 2.0,
   "questions": [
     {
-      "question": "A poset or partially ordered set A is a pair, ( B,≤ ) of a set B whose elements are called the vertices of A and obeys following rules",
+      "question": "A relation R on set X is reflexive if  ",
       "answers": {
-        "a": "Reflexive, Transitive and  Anti-symmetric",
-        "b": "Reflexive, symmetric",
-        "c": "Transitive , Anti-symmetric",
-        "d": "Reflexive, Transitive and symmetric"
+        "a": "(a, a) ∈ R ∀ a ∈ X",
+        "b": "aRb ⇒ bRa, ∀ a, b ∈ X",
+        "c": "(a, b) ∈ R ∀ a,b ∈ X",
+        "d": " If (a, b) ∈ R and (b, c) ∈ R then, (a, c) ∈ R, ∀ a, b, c ∈ X "
        
       },
       "explanations": {
-        "a": "obeys Reflexive, Transitive and  Anti-symmetric",
-        "b":"obeys Reflexive, Transitive and  Anti-symmetric",
-        "c":"obeys Reflexive, Transitive and  Anti-symmetric",
-        "d":"obeys Reflexive, Transitive and  Anti-symmetric"
+        "a": "",
+        "b":"",
+        "c":"",
+        "d":""
       },
       "correctAnswer": "a",
       "difficulty": "beginner"
     },
     {
-      "question": "___ elements of A are those where a ≤ c in A does not contain elements in c",
+      "question": "A relation R on set X is transitive if  ",
       "answers": {
-        "a": "minimal",
-        "b": "maximal",
-        "c": "both a and b",
-        "d": "None of the above"
+        "a": "(a, a) ∈ R ∀ a ∈ X",
+        "b": "aRb ⇒ bRa, ∀ a, b ∈ X",
+        "c": "(a, b) ∈ R ∀ a,b ∈ X",
+        "d": " If (a, b) ∈ R and (b, c) ∈ R then, (a, c) ∈ R, ∀ a, b, c ∈ X "
+       
       },
       "explanations": {
-        "a": "Maximal elemets of A are those where a ≤ c in A does not contain elements in c",
-        "b": "Maximal elemets of A are those where a ≤ c in A does not contain elements in c",
-        "c": "Maximal elemets of A are those where a ≤ c in A does not contain elements in c",
-        "d": "Maximal elemets of A are those where a ≤ c in A does not contain elements in c"
+        "a": "",
+        "b":"",
+        "c":"",
+        "d":""
+      },
+      "correctAnswer": "d",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "A relation R is symmetric if  ",
+      "answers": {
+        "a": "(a, a) ∈ R ∀ a ∈ X",
+        "b": "aRb ⇒ bRa, ∀ a, b ∈ X",
+        "c": "(a, b) ∈ R ∀ a,b ∈ X",
+        "d": " If (a, b) ∈ R and (b, c) ∈ R then, (a, c) ∈ R, ∀ a, b, c ∈ X "
+       
+      },
+      "explanations": {
+        "a": "",
+        "b":"",
+        "c":"",
+        "d":""
       },
       "correctAnswer": "b",
       "difficulty": "beginner"
