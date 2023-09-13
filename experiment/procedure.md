@@ -9,6 +9,7 @@ TASK 1 : Select hasse edges from graph to make a hasse diagram .
     * Use  Change Graph in controls window to generate new graph
 
 TASK 2 : Draw hasse diagram 
+
     * Given nodes draw edges to make hasse diagram
     * Use  Change Graph in controls window to generate new graph
     * Draw mode ON is to enable drawing edges.
