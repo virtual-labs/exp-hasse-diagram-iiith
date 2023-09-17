@@ -2,12 +2,12 @@
   "version": 2.0,
   "questions": [
     {
-      "question": "A relation R on set X is reflexive if  ",
+      "question": "A relation $R$ on set $X$ is reflexive if  ",
       "answers": {
-        "a": "(a, a) ∈ R ∀ a ∈ X",
-        "b": "aRb ⇒ bRa, ∀ a, b ∈ X",
-        "c": "(a, b) ∈ R ∀ a,b ∈ X",
-        "d": " If (a, b) ∈ R and (b, c) ∈ R then, (a, c) ∈ R, ∀ a, b, c ∈ X "
+        "a": "$(a, a) \in R ∀ a \in X$",
+        "b": "$aRb \implies bRa, ∀ a, b \in X$",
+        "c": "$(a, b) \in R ∀ a,b \in X$",
+        "d": " $If (a, b) \in R and (b, c) \in R then, (a, c) \in R, ∀ a, b, c \in X$ "
        
       },
       "explanations": {
@@ -20,12 +20,12 @@
       "difficulty": "beginner"
     },
     {
-      "question": "A relation R on set X is transitive if  ",
+      "question": "A relation $R$ on set $X$ is transitive if  ",
       "answers": {
-        "a": "(a, a) ∈ R ∀ a ∈ X",
-        "b": "aRb ⇒ bRa, ∀ a, b ∈ X",
-        "c": "(a, b) ∈ R ∀ a,b ∈ X",
-        "d": " If (a, b) ∈ R and (b, c) ∈ R then, (a, c) ∈ R, ∀ a, b, c ∈ X "
+        "a": "$(a, a) \in R ∀ a \in X$",
+        "b": "$aRb \implies bRa, ∀ a, b \in X$",
+        "c": "$(a, b) \in R ∀ a,b \in X$",
+        "d": " $If (a, b) \in R and (b, c) \in R then, (a, c) \in R, ∀ a, b, c \in X$ "
        
       },
       "explanations": {
@@ -38,12 +38,12 @@
       "difficulty": "beginner"
     },
     {
-      "question": "A relation R is symmetric if  ",
+      "question": "A relation $R$ is symmetric if  ",
       "answers": {
-        "a": "(a, a) ∈ R ∀ a ∈ X",
-        "b": "aRb ⇒ bRa, ∀ a, b ∈ X",
-        "c": "(a, b) ∈ R ∀ a,b ∈ X",
-        "d": " If (a, b) ∈ R and (b, c) ∈ R then, (a, c) ∈ R, ∀ a, b, c ∈ X "
+        "a": "$(a, a) \in R ∀ a \in X$",
+        "b": "$aRb \implies bRa, ∀ a, b \in X$",
+        "c": "$(a, b) \in R ∀ a,b \in X$",
+        "d": " $If (a, b) \in R and (b, c) \in R then, (a, c) \in R, ∀ a, b, c \in X$ "
        
       },
       "explanations": {
