@@ -55,10 +55,12 @@ The resulting diagram is far simpler.
 ![Hasse](images/hasse.png)
 
 Of course, you need not always start with the complete relation in the partial order and then trim everything. Rather, you can build a Hasse directly from the partial order
- ##### Example
+<details>
+<summary>
 Draw a Hasse diagram for the partial ordering {(a, b) | a | b} on {1, 2, 3, 4, 5, 6, 10, 12, 15, 20, 30, 60} (these are the divisors of 60)
-
+</summary>
 ![Example](images/examplehasse.png)
+</details>
 
 ### Extremal Elements
 We will define the following terms:
