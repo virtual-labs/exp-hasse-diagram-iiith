@@ -84,6 +84,7 @@ Find the maximal elements.
 We first draw the Hasse diagram for the poset 
 ![Hasse diagram for the poset (A,|) ](images/ex1.svg)
 The maximal elements are 24,30
+
 <details>
 <summary>
 Find the minimal elements.
