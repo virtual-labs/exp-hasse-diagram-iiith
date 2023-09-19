@@ -51,16 +51,17 @@ The resulting diagram is far simpler.
 ![remove self loops](images/selfloop.png)
 ![remove ransitive loops](images/transitive.png)
 <br />
+
 ![remove orientation](images/remove_orientation.png)
+
 ![Hasse](images/hasse.png)
 
 Of course, you need not always start with the complete relation in the partial order and then trim everything. Rather, you can build a Hasse directly from the partial order
-<details>
-<summary>
+
 Draw a Hasse diagram for the partial ordering {(a, b) | a | b} on {1, 2, 3, 4, 5, 6, 10, 12, 15, 20, 30, 60} (these are the divisors of 60)
-</summary>
+
 ![Example](images/examplehasse.png)
-</details>
+
 
 ### Extremal Elements
 We will define the following terms:
@@ -80,9 +81,12 @@ If there is one unique minimal element a, we call it the minimum element (or the
 
 ### Example
 Given the set A={2,3,4,5,8,10,12,24,30} and the divisibility relation on it.
-1. Find the maximal elements.
-We first draw the Hasse diagram for the poset 
-![Hasse diagram for the poset (A,|) ](images/ex1.svg  width="300" height="300")
+1.Find the maximal elements.
+
+We first draw the Hasse diagram for the poset
+
+![Hasse diagram](images/ex1r.svg )
+
 The maximal elements are 24,30
 
 <details>
