@@ -2,7 +2,7 @@
   "version": 2.0,
   "questions": [
     {
-    "question": "A poset or partially ordered set $A$ is a pair, $( B, \preceq )$ of a set $B$ whose elements are called the vertices of $A$ and obeys following rules",
+    "question": "A poset or partially ordered set A is a pair, ( B, preceq ) of a set B whose elements are called the vertices of A and obeys following rules",
     "answers": {
       "a": "Reflexive, Transitive and  Anti-symmetric",
       "b": "Reflexive, symmetric",
@@ -20,7 +20,7 @@
     "difficulty": "beginner"
     },
     {
-      "question": "___ elements of A are those where $a \preceq c in A$ does not contain elements in $c$",
+      "question": "___ elements of A are those where a preceq c in A does not contain elements in c",
       "answers": {
         "a": "minimal",
         "b": "maximal",
@@ -37,7 +37,7 @@
       "difficulty": "beginner"
     },
     {
-      "question": "Let A={1,2,3,4,6,24,36,72}, Let $\preceq$ be the partial order defined by $A\preceqB$ if a divides b. Number of edges in the Hasse diagram of (A,\preceq) is",
+      "question": "Let A={1,2,3,4,6,24,36,72}, Let preceq be the partial order defined by A preceq B if a divides b. Number of edges in the Hasse diagram of (A,preceq) is",
       "answers": {
         "a": "14",
         "b": "10",
@@ -54,7 +54,7 @@
       "difficulty": "intermediate"
     },
     {
-      "question": "If A = {1, 2, 3, 6, 9, 18], then number of edges in the poset diagram of poset $[A; /]$ is",
+      "question": "If A = {1, 2, 3, 6, 9, 18], then number of edges in the poset diagram of poset [A; /] is",
       "answers": {
         "a": "7",
         "b": "5",
@@ -71,7 +71,7 @@
       "difficulty": "intermediate"
     },
     {
-      "question": "Let P be the set of all people. Let $R$ be a binary relation on $P$ such that $(a, b)$ is in $R$ if $a$ is a brother of $b$. Is $R$ symmetric, transitive, an equivalence relation, a partial order relation?",
+      "question": "Let P be the set of all people. Let R be a binary relation on P such that (a, b) is in R if a is a brother of b. Is R symmetric, transitive, an equivalence relation, a partial order relation?",
       "answers": {
         "a": "NO, NO, NO, NO",
         "b": "NO, NO, YES, NO",
