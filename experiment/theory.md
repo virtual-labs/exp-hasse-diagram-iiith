@@ -81,13 +81,18 @@ If there is one unique minimal element a, we call it the minimum element (or the
 
 ### Example
 Given the set A={2,3,4,5,8,10,12,24,30} and the divisibility relation on it.
+
 1.Find the maximal elements.
 
-We first draw the Hasse diagram for the poset
+- We first draw the Hasse diagram for the poset
 
 ![Hasse diagram](images/ex1.svg )
 
-The maximal elements are 24,30
+![Hasse diagram](images/ex2.svg )
+
+![Hasse diagram](images/ex3.svg )
+
+- The maximal elements are 24,30
 
 <details>
 <summary>
