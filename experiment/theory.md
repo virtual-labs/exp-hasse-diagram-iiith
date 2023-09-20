@@ -84,7 +84,9 @@ Given the set A={2,3,4,5,8,10,12,24,30} and the divisibility relation on it.
 
 1.Find the maximal elements.
 
-- We first draw the Hasse diagram for the poset
+- We first draw the Hasse diagram for the poset.
+
+<br />
 
 ![Hasse diagram](images/ex1.svg )
 
