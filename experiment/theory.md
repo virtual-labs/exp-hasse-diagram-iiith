@@ -88,10 +88,6 @@ Given the set A={2,3,4,5,8,10,12,24,30} and the divisibility relation on it.
 
 ![Hasse diagram](images/ex1.svg )
 
-![Hasse diagram](images/ex2.svg )
-
-![Hasse diagram](images/ex3.svg )
-
 - The maximal elements are 24,30
 
 <details>
