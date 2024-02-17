@@ -104,7 +104,7 @@ Find the minimal elements.
 <summary>
 Is there a greatest element in the poset?
 </summary>
-- The greatest element does not exist, asthere are more than one maximal elements
+- The greatest element does not exist, as there are more than one maximal elements
 </details>
 
 
