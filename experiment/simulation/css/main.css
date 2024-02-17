@@ -1,106 +1,96 @@
+
+
+/* disabling text selection */
 body {
-  font-family: helvetica;
-  font-size: 14px;
-  max-width: 1000px;
-  margin: 20 auto;
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome, Edge, Opera and Firefox */
 }
 
-button {
-  border: 0;
-  background: rgb(101, 87, 139);
-  padding: 0;
-  width: 200px;
-  height: 50px;
-  position: relative;
-}
-button span {
-  position: relative;
-  top: 10px;
-  left: 0;
+text {
+  pointer-events:none;
 }
 
 
-#console {
-  
-  width: 90%;
-  height: 0%;
-  left: 0px ;
-  top: 650px;
-  
-  z-index: 2;
-  position: relative;
-  text-align:  center;
-  
-  background-color: rgb(254, 255, 254);
-  
-  font-size: 2em;
+.container {
+  margin-top: 1%;
+}
 
+.column {
+  text-align: center;
 }
 
 #cy {
-  width: 90%;
-  height: 60%;
-  left: 0;
-  top: 4%;
-  z-index: 1;
-  border: 3px solid #299;
-  margin: 1px 1px 1px 1px;
-}
+  position: absolute;
+  width: 45%;
+  height: 50%;
+  margin: 5px;
+  top: 33%;
+  left: 28%;
 
-h1 {
-  font-size: 2em;
+  border: 0.2rem solid black;
 }
 
 
-.collapsible {
-  background-color: #777;
-  color: white;
-  cursor: pointer;
-  padding: 18px;
-  width: 100%;
-  border: none;
-  text-align: left;
-  outline: none;
-  font-size: 15px;
+.success-message {
+  font-size: 1.2rem;
+  color: rgb(31, 170, 31);
+  font-weight: bold;
 }
 
-.active, .collapsible:hover {
-  background-color: #555;
+.failure-message {
+  font-size: 1.2rem;
+  color: rgb(228, 23, 23);
+  font-weight: bold;
 }
 
-.content {
-  padding: 0 18px;
-  display: none;
+.highlight {
+  border:3px solid red;
+  box-shadow: 0 0 10px #719ECE;
+}
+
+/* for dropping instruction box  */
+
+.instructions-box {
+  max-height: 50px;
   overflow: hidden;
-  background-color: #f1f1f1;
+  transition: all .5s ease;
+ 
 }
 
-container { 
-  height: 200px;
-  position: relative;
-  border: 3px solid green; 
-  
+.instructions-box.expand {
+  max-height: 400px;
 }
 
-.center {
-  margin: 1px;
-  position: relative;
-  top: 50%;
-  left: 50%;
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-
+.v-instruction-container {
+  border: .2rem solid #97d23d;
+  justify-content: flex-start;
 }
 
-ul {
-	list-style:disc ;
+#observations {
+  font-size: 1.25em;
 }
-	
-ul li::before {
-	  	
-	color: rgb(0, 0, 0);
-	font-weight: bold;
-	display: inline-block; 
-	width: 1em;
-	margin-left: -1em;
+
+
+.success-table{
+  font-size: 1rem;
+  color: rgb(31, 170, 31);
+  font-weight: bold;
 }
+
+.failure-table{
+  font-size: 1rem;
+  color: rgb(228, 23, 23);
+  font-weight: bold;
+}
+
+.bold-table{
+  font-weight: bold;
+}
+
+
+
