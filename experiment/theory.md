@@ -72,11 +72,11 @@ We will define the following terms:
 Lattice
 
 #### Maximal Element Definition
-An element a in a poset $(S, \preccurlyeq)$ is called maximal if it is not less than any other element in $S$. That is, $\exists b \in S(a \prec b)$
+An element a in a poset $(S, \preccurlyeq)$ is called maximal if it is not less than any other element in $S$. That is,  $\exists  b \in S(a \prec b)$
 If there is one unique maximal element a, we call it the maximum element (or the greatest element)
 
 #### Minimal Element Definition
-An element a in a poset $(S, \preccurlyeq)$ is called minimal if it is not greater than any other element in $S$. That is, $\exists b \in S(b \prec a)$
+An element a in a poset $(S, \preccurlyeq)$ is called minimal if it is not greater than any other element in $S$. That is, $\exists  b \in S(b \prec a)$
 If there is one unique minimal element a, we call it the minimum element (or the least element).
 
 ### Example
@@ -90,7 +90,7 @@ Find the maximal elements.
 
 ![Hasse diagram](images/ex1.svg )
 
-- The maximal elements are 24,30
+The maximal elements are 24,30
 
 <details>
 <summary>
