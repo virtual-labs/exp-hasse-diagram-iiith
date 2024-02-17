@@ -34,7 +34,7 @@ If $(S, \preccurlyeq )$ is a poset and every two elements of S are comparable, S
  ##### Example
 
 The set of integers over the relation “less than equal to” is a total order; $(Z, \preccurlyeq)$ since for every $a, b \in Z$, it must be the case that
-$ a \preccurlyeq b or b \preccurlyeq a $.
+$a \preccurlyeq b$ or $b \preccurlyeq a$.
 
 What happens if we replace $\preccurlyeq$ with $\prec$
 
