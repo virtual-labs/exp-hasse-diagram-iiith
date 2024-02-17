@@ -82,7 +82,7 @@ If there is one unique minimal element a, we call it the minimum element (or the
 ### Example
 Given the set A={2,3,4,5,8,10,12,24,30} and the divisibility relation on it.
 
-1.Find the maximal elements.
+Find the maximal elements.
 
 - We first draw the Hasse diagram for the poset.
 
@@ -94,7 +94,7 @@ Given the set A={2,3,4,5,8,10,12,24,30} and the divisibility relation on it.
 
 <details>
 <summary>
-2. Find the minimal elements.
+Find the minimal elements.
 </summary>
 - The minimal elements are 2,3,5
 </details>
@@ -102,7 +102,7 @@ Given the set A={2,3,4,5,8,10,12,24,30} and the divisibility relation on it.
 
 <details>
 <summary>
-3. Is there a greatest element in the poset?
+Is there a greatest element in the poset?
 </summary>
 - The greatest element does not exist, asthere are more than one maximal elements
 </details>
@@ -110,35 +110,35 @@ Given the set A={2,3,4,5,8,10,12,24,30} and the divisibility relation on it.
 
 <details>
 <summary>
-4. Is there a least element in the poset?
+Is there a least element in the poset?
 </summary>
 - The least element does not exist as there are more than one minimal element
 </details>
 
 <details>
 <summary>
-5. Find all upper bounds of {8,12}
+Find all upper bounds of {8,12}
 </summary>
 - There is one upper bound for the subset {8,12} : 24
 </details>
 
 <details>
 <summary>
-6. Find all lower bounds of  {8,12}
+Find all lower bounds of  {8,12}
 </summary>
 - The lower bounds of the subset  {8,12} are 2, 4
 </details>
 
 <details>
 <summary>
-7. What is the least upper bound of {4,8}?
+What is the least upper bound of {4,8}?
 </summary>
 - The least upper bound of {4,8} is 8 (the smallest element of the upper bounds 8 and 24).
 </details>
 
 <details>
 <summary>
-8. What is the greatest lower bound of {4,8}?
+What is the greatest lower bound of {4,8}?
 </summary>
 - The greatest lower bound of {4,8} is 4 (the largest element of the lower bounds 2 and 4).
 </details>
