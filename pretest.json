@@ -1,0 +1,95 @@
+{
+  "version": 2.0,
+  "questions": [
+    {
+      "question": "A poset or partially ordered set A is a pair, ( B, ≤ ) of a set B whose elements are called the vertices of A and obeys following rules",
+      "answers": {
+        "a": "Reflexive, Transitive and  Anti-symmetric",
+        "b": "Reflexive, symmetric",
+        "c": "Transitive , Anti-symmetric",
+        "d": "Reflexive, Transitive and symmetric"
+       
+      },
+      "explanations": {
+        "a": "obeys Reflexive, Transitive and  Anti-symmetric",
+        "b":"obeys Reflexive, Transitive and  Anti-symmetric",
+        "c":"obeys Reflexive, Transitive and  Anti-symmetric",
+        "d":"obeys Reflexive, Transitive and  Anti-symmetric"
+      },
+      "correctAnswer": "a",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "Hasse diagram is also called",
+      "answers": {
+        "a": "Unordered Diagram",
+        "b": "Partial Ordered Diagram",
+        "c": "Partial Unordered Diagram",
+        "d": "Ordered Diagram"
+      },
+      "explanations": {
+        "a": "",
+        "b": "",
+        "c": "",
+        "d": "Ordered Diagram"
+      },
+      "correctAnswer": "d",
+      "difficulty": "beginner"
+      
+    },
+    {
+      "question": "___ elements of A are those where a ≤ c in A does not contain elements in c",
+      "answers": {
+        "a": "minimal",
+        "b": "maximal",
+        "c": "both a and b",
+        "d": "None of the above"
+      },
+      "explanations": {
+        "a": "Maximal elemets of A are those where a ≤ c in A does not contain elements in c",
+        "b": "Maximal elemets of A are those where a ≤ c in A does not contain elements in c",
+        "c": "Maximal elemets of A are those where a ≤ c in A does not contain elements in c",
+        "d": "Maximal elemets of A are those where a ≤ c in A does not contain elements in c"
+      },
+      "correctAnswer": "b",
+      "difficulty": "intermediate"
+      
+    },
+    {
+      "question": "If a partial order is drawn as a Hasse diagram in which no two edges cross, its covering graph is called",
+      "answers": {
+        "a": "biconnected components",
+        "b": "upward planar",
+        "c": "downward planar",
+        "d": "lattice"
+      },
+      "explanations": {
+        "a": "",
+        "b": "it is called upward planar",
+        "c": "",
+        "d": ""
+      },
+      "correctAnswer": "b",
+      "difficulty": "intermediate"  
+    },
+    {
+      "question": " It is possible to have ___ maximal element and ___ minimal element.",
+      "answers": {
+        
+
+        "a": "One, one",
+        "b": "Less than two , more than one",
+        "c": " one or more, one or more",
+        "d": "Two, less than two"
+      },
+      "explanations": {
+        "a": "",
+        "b": "",
+        "c": "It is possible to have one or more than one maximal element and one or more than one minimal element.",
+        "d": ""
+      },
+      "correctAnswer": "c",
+      "difficulty": "intermediate"  
+    }
+  ]
+}

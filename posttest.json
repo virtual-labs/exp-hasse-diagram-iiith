@@ -1,0 +1,94 @@
+{
+  "version": 2.0,
+  "questions": [
+    {
+      "question": "Let A={1,2,3,4,6,24,36,72}, Let ≤ be the partial order defined by A≤B if a divides b. Number of edges in the Hasse diagram of (A,≤) is",
+      "answers": {
+        "a": "14",
+        "b": "10",
+        "c": "11",
+        "d": "13"
+      },
+      "explanations": {
+        "a": "A hasse diagram is a graphical rendering of partial order set displayed via the cover realtion of the partial ordered set with an implied upward direction, here the number of hasse edges are 11 ",
+        "b": "A hasse diagram is a graphical rendering of partial order set displayed via the cover realtion of the partial ordered set with an implied upward direction, here the number of hasse edges are 11 ",
+        "c": "A hasse diagram is a graphical rendering of partial order set displayed via the cover realtion of the partial ordered set with an implied upward direction, here the number of hasse edges are 11 ",
+        "d": "A hasse diagram is a graphical rendering of partial order set displayed via the cover realtion of the partial ordered set with an implied upward direction, here the number of hasse edges are 11 "
+      },
+      "correctAnswer": "c",
+      "difficulty": "intermediate"
+    },
+
+    {
+      "question": "If A = {1, 2, 3, 6, 9, 18], then number of edges in the poset diagram of poset [A; /] is",
+      "answers": {
+        "a": "7",
+        "b": "5",
+        "c": "6",
+        "d": "8"
+      },
+      "explanations": {
+        "a": "7 edges",
+        "b": " ",
+        "c": " ",
+        "d": " "
+      },
+      "correctAnswer": "a",
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "Which of the following are one of the maximal and minimal elements respectively of the poset ({2,4,5,10,12,20},/)",
+      "answers": {
+        "a": "12,2",
+        "b": "10,2",
+        "c": "5,2",
+        "d": "10,5"
+      },
+      "explanations": {
+        "a": "Maximal elemets are {12,20} and the minimal elements are {2,5} therefore 12 ,2 is correct",
+        "b": "Maximal elemets are {12,20} and the minimal elements are {2,5} therefore 10 ,2 is wrong",
+	      "c": "Maximal elemets are {12,20} and the minimal elements are {2,5} therefore 5,2 is wrong",
+	      "d": "Maximal elemets are {12,20} and the minimal elements are {2,5} therefore 10,5 is wrong"
+      },
+      "correctAnswer": "a",
+      "difficulty": "hard"
+      
+    },
+
+    {
+      "question": "Which of the following is/are neither a maximal element nor a minimal element of the  poset ({1,2,3,4,5,6},/)?",
+      "answers": {
+        "a": "2,3,4",
+        "b": "only 2",
+        "c": "both 2 and 3",
+        "d": "None of the above"
+      },
+      "explanations": {
+        "a": "4 is maximal element since it will not succeeded by another element in Hasse diagram",
+        "b": "2 and 3 are neither maximal nor minimal because they are preceded and succeeded by other elements",
+        "c": "2 and 3 are neither maximal nor minimal because they are preceded and succeeded by other elements",
+        "d": "option c is correct"
+      },
+      "correctAnswer": "c",
+      "difficulty": "hard"
+      
+    },
+    {
+      "question": "Let P be the set of all people. Let R be a binary relation on P such that (a, b) is in R if a is a brother of b. Is R symmetric, transitive, an equivalence relation, a partial order relation?",
+      "answers": {
+        "a": "NO, NO, NO, NO",
+        "b": "NO, NO, YES, NO",
+        "c": "NO, YES, NO, NO",
+        "d": "NO, YES, YES, NO"
+      },
+      "explanations": {
+        "a": "R is transitive",
+        "b": "R is not equivalence relation ",
+        "c": "R is only transitive  ",
+        "d": "R is Transitive not equivalence relation"
+      },
+      "correctAnswer": "c",
+      "difficulty": "hard"
+    }
+  ]
+}

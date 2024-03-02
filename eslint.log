@@ -1,0 +1,48 @@
+
+/home/runner/work/exp-hasse-diagram-iiith/exp-hasse-diagram-iiith/experiment/simulation/js/cytoscape-edgehandles.js
+     5:3   warning  'module' is not defined                                     no-undef
+     5:28  warning  'require' is not defined                                    no-undef
+     5:55  warning  'require' is not defined                                    no-undef
+     6:42  warning  'define' is not defined                                     no-undef
+     7:3   warning  'define' is not defined                                     no-undef
+     9:3   warning  'exports' is not defined                                    no-undef
+     9:45  warning  'require' is not defined                                    no-undef
+     9:72  warning  'require' is not defined                                    no-undef
+    81:10  warning  Unexpected newline between function and ( of function call  no-unexpected-multiline
+    83:25  warning  'exports' is defined but never used                         no-unused-vars
+    83:34  warning  '__webpack_require__' is defined but never used             no-unused-vars
+   124:25  warning  'exports' is defined but never used                         no-unused-vars
+   124:34  warning  '__webpack_require__' is defined but never used             no-unused-vars
+   174:25  warning  'exports' is defined but never used                         no-unused-vars
+   174:34  warning  '__webpack_require__' is defined but never used             no-unused-vars
+   240:25  warning  'exports' is defined but never used                         no-unused-vars
+   240:34  warning  '__webpack_require__' is defined but never used             no-unused-vars
+   269:25  warning  'exports' is defined but never used                         no-unused-vars
+   269:34  warning  '__webpack_require__' is defined but never used             no-unused-vars
+   345:7   warning  'options' is assigned a value but never used                no-unused-vars
+   499:25  warning  'exports' is defined but never used                         no-unused-vars
+   499:34  warning  '__webpack_require__' is defined but never used             no-unused-vars
+   533:25  warning  'exports' is defined but never used                         no-unused-vars
+   533:34  warning  '__webpack_require__' is defined but never used             no-unused-vars
+   968:7   warning  Expected to return a value in method 'get'                  getter-return
+  1024:25  warning  'exports' is defined but never used                         no-unused-vars
+  1024:34  warning  '__webpack_require__' is defined but never used             no-unused-vars
+  1156:25  warning  'exports' is defined but never used                         no-unused-vars
+  1162:25  warning  'exports' is defined but never used                         no-unused-vars
+
+/home/runner/work/exp-hasse-diagram-iiith/exp-hasse-diagram-iiith/experiment/simulation/js/main.js
+   66:23  warning  'cytoscape' is not defined         no-undef
+  134:11  warning  '$' is not defined                 no-undef
+  138:9   warning  '$' is not defined                 no-undef
+  140:11  warning  '$' is not defined                 no-undef
+  148:32  warning  'event' is defined but never used  no-unused-vars
+
+/home/runner/work/exp-hasse-diagram-iiith/exp-hasse-diagram-iiith/experiment/simulation/js/main1.js
+   39:1   warning  'hedges' is not defined            no-undef
+   67:26  warning  'cytoscape' is not defined         no-undef
+   73:30  warning  'nodes' is defined but never used  no-unused-vars
+  171:17  warning  'hedges' is not defined            no-undef
+  171:24  warning  'edgedata' is not defined          no-undef
+
+✖ 39 problems (0 errors, 39 warnings)
+
