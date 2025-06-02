@@ -1,6 +1,6 @@
-# References
+### References and Further Reading
 
-## Textbooks
+### Textbooks
 
 1. Davey, B. A., & Priestley, H. A. (2002). *Introduction to Lattices and Order* (2nd ed.). Cambridge University Press.
    - Chapter 2: Orders
@@ -16,9 +16,9 @@
    - Section 9.6: Partial Orderings
    - Section 9.7: Hasse Diagrams
 
-## Online Educational Resources
+### Online Educational Resources
 
-### Tutorials and Articles
+#### Tutorials and Articles
 
 1. GeeksforGeeks:
    - [Hasse Diagram](https://www.geeksforgeeks.org/hasse-diagram-in-discrete-mathematics/)
@@ -32,7 +32,7 @@
    - [Understanding Hasse Diagrams](https://math.stackexchange.com/questions/tagged/hasse-diagrams)
    - [Poset Visualization](https://math.stackexchange.com/questions/tagged/posets)
 
-### Video Lectures
+#### Video Lectures
 
 1. NPTEL Courses:
    - [Discrete Mathematics - Partial Orders](https://nptel.ac.in/courses/106/106/106106183/)
@@ -42,13 +42,13 @@
    - [Mathematics for Computer Science - Partial Orders](https://ocw.mit.edu/courses/6-042j-mathematics-for-computer-science-fall-2010/)
    - Lecture 6: Graph Theory and Coloring
 
-## Interactive Learning Tools
+### Interactive Learning Tools
 
 1. Wolfram Demonstrations Project:
    - [Hasse Diagram Explorer](https://demonstrations.wolfram.com/topics/hasse-diagrams)
    - [Visualizing Partial Orders](https://demonstrations.wolfram.com/topics/partial-orders)
 
-## Research Papers and Advanced Reading
+### Research Papers and Advanced Reading
 
 1. Freese, R. (2004). "Automated Lattice Drawing." In *Concept Lattices*, Lecture Notes in Computer Science, vol 2961. Springer.
    - Focuses on algorithms for drawing Hasse diagrams of lattices
@@ -57,7 +57,7 @@
    - Section 14.4: Partial Orders
    - Applications of partial orders in computer science
 
-## Additional Resources
+### Additional Resources
 
 1. Online Tools:
    - [LATEX-Draw](https://latexdraw.com/) - For creating Hasse diagrams
@@ -66,6 +66,3 @@
 2. Practice Problems:
    - [Project Euler](https://projecteuler.net/) - Problems involving order theory
    - [Math Exercises](https://www.math-exercises.com/) - Partial orders and Hasse diagrams
-
-## Note to Students
-These references range from introductory to advanced levels. Begin with the textbooks and online tutorials before moving to research papers. The interactive tools and practice problems will help reinforce your understanding through hands-on experience.
