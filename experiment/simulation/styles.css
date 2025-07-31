@@ -360,18 +360,6 @@ input[type="range"] {
     aspect-ratio: 1.5/1;
   }
   
-  /* Move floating buttons up to avoid overlap with other floating buttons */
-  .floating-button.primary {
-    bottom: 6.5rem; /* Moved up from 2rem */
-  }
-  
-  .floating-button.secondary {
-    bottom: 11rem; /* Moved up from 6.5rem */
-  }
-  
-  .floating-panel {
-    bottom: 11.5rem; /* Adjust panel position accordingly */
-  }
 }
 
 /* Hasse Diagram specific styles */
@@ -400,4 +388,20 @@ input[type="range"] {
   padding: 16px;
   box-shadow: inset 0 2px 4px rgba(0,0,0,0.1);
   width: 100%;
+}
+
+@media (max-width: 1000px) {
+ /* Move floating buttons up to avoid overlap with other floating buttons */
+  .floating-button.primary {
+    bottom: 6.5rem; /* Moved up from 2rem */
+  }
+  
+  .floating-button.secondary {
+    bottom: 11rem; /* Moved up from 6.5rem */
+  }
+  
+  .floating-panel {
+    bottom: 11.5rem; /* Adjust panel position accordingly */
+  }
+  
 }
