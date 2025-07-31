@@ -359,6 +359,19 @@ input[type="range"] {
   #gameCanvas {
     aspect-ratio: 1.5/1;
   }
+  
+  /* Move floating buttons up to avoid overlap with other floating buttons */
+  .floating-button.primary {
+    bottom: 6.5rem; /* Moved up from 2rem */
+  }
+  
+  .floating-button.secondary {
+    bottom: 11rem; /* Moved up from 6.5rem */
+  }
+  
+  .floating-panel {
+    bottom: 11.5rem; /* Adjust panel position accordingly */
+  }
 }
 
 /* Hasse Diagram specific styles */
