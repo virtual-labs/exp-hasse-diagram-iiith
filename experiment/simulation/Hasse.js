@@ -143,12 +143,20 @@ class HasseDiagram {
         // Generate subset relations
         this.relations = [];
         this.targetRelations = [];
+        
+        // First, generate all subset relations
         for (let i = 0; i < this.elements.length; i++) {
             for (let j = 0; j < this.elements.length; j++) {
                 if (i !== j && this.isSubset(this.elements[i].value, this.elements[j].value)) {
                     this.relations.push({ from: i, to: j });
-                    
-                    // Check if it's a covering relation
+                }
+            }
+        }
+        
+        // Then, identify covering relations (only direct connections, no transitive edges)
+        for (let i = 0; i < this.elements.length; i++) {
+            for (let j = 0; j < this.elements.length; j++) {
+                if (i !== j && this.isSubset(this.elements[i].value, this.elements[j].value)) {
                     if (this.isCoveringRelation(i, j)) {
                         this.targetRelations.push({ from: i, to: j });
                     }
@@ -169,12 +177,20 @@ class HasseDiagram {
         // Generate divisibility relations
         this.relations = [];
         this.targetRelations = [];
+        
+        // First, generate all divisibility relations
         for (let i = 0; i < this.elements.length; i++) {
             for (let j = 0; j < this.elements.length; j++) {
                 if (i !== j && this.elements[j].value % this.elements[i].value === 0) {
                     this.relations.push({ from: i, to: j });
-                    
-                    // Check if it's a covering relation
+                }
+            }
+        }
+        
+        // Then, identify covering relations (only direct connections, no transitive edges)
+        for (let i = 0; i < this.elements.length; i++) {
+            for (let j = 0; j < this.elements.length; j++) {
+                if (i !== j && this.elements[j].value % this.elements[i].value === 0) {
                     if (this.isCoveringRelation(i, j)) {
                         this.targetRelations.push({ from: i, to: j });
                     }
