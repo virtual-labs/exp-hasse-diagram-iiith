@@ -1,0 +1,82 @@
+<svg width="600" height="350" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="600" height="350" fill="#fafafa" stroke="#ddd" stroke-width="1"/>
+  
+  <!-- Title -->
+  <text x="300" y="25" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#333">
+    Non-Distributive Lattices: Diamond M₃ and Pentagon N₅
+  </text>
+  
+  <!-- Diamond M3 -->
+  <text x="150" y="60" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#333">
+    Diamond M₃
+  </text>
+  
+  <!-- Diamond nodes -->
+  <circle cx="150" cy="80" r="15" fill="#e74c3c" stroke="#c0392b" stroke-width="2"/>
+  <text x="150" y="85" font-family="Arial, sans-serif" font-size="12" font-weight="bold" text-anchor="middle" fill="white">1</text>
+  
+  <circle cx="100" cy="140" r="15" fill="#3498db" stroke="#2980b9" stroke-width="2"/>
+  <text x="100" y="145" font-family="Arial, sans-serif" font-size="12" font-weight="bold" text-anchor="middle" fill="white">a</text>
+  
+  <circle cx="150" cy="140" r="15" fill="#3498db" stroke="#2980b9" stroke-width="2"/>
+  <text x="150" y="145" font-family="Arial, sans-serif" font-size="12" font-weight="bold" text-anchor="middle" fill="white">b</text>
+  
+  <circle cx="200" cy="140" r="15" fill="#3498db" stroke="#2980b9" stroke-width="2"/>
+  <text x="200" y="145" font-family="Arial, sans-serif" font-size="12" font-weight="bold" text-anchor="middle" fill="white">c</text>
+  
+  <circle cx="150" cy="200" r="15" fill="#9b59b6" stroke="#8e44ad" stroke-width="2"/>
+  <text x="150" y="205" font-family="Arial, sans-serif" font-size="12" font-weight="bold" text-anchor="middle" fill="white">0</text>
+  
+  <!-- Diamond edges -->
+  <line x1="142" y1="94" x2="108" y2="126" stroke="#666" stroke-width="2"/>
+  <line x1="150" y1="95" x2="150" y2="125" stroke="#666" stroke-width="2"/>
+  <line x1="158" y1="94" x2="192" y2="126" stroke="#666" stroke-width="2"/>
+  
+  <line x1="108" y1="154" x2="142" y2="186" stroke="#666" stroke-width="2"/>
+  <line x1="150" y1="155" x2="150" y2="185" stroke="#666" stroke-width="2"/>
+  <line x1="192" y1="154" x2="158" y2="186" stroke="#666" stroke-width="2"/>
+  
+  <!-- Pentagon N5 -->
+  <text x="450" y="60" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#333">
+    Pentagon N₅
+  </text>
+  
+  <!-- Pentagon nodes -->
+  <circle cx="450" cy="80" r="15" fill="#e74c3c" stroke="#c0392b" stroke-width="2"/>
+  <text x="450" y="85" font-family="Arial, sans-serif" font-size="12" font-weight="bold" text-anchor="middle" fill="white">1</text>
+  
+  <circle cx="420" cy="130" r="15" fill="#3498db" stroke="#2980b9" stroke-width="2"/>
+  <text x="420" y="135" font-family="Arial, sans-serif" font-size="12" font-weight="bold" text-anchor="middle" fill="white">a</text>
+  
+  <circle cx="480" cy="130" r="15" fill="#3498db" stroke="#2980b9" stroke-width="2"/>
+  <text x="480" y="135" font-family="Arial, sans-serif" font-size="12" font-weight="bold" text-anchor="middle" fill="white">b</text>
+  
+  <circle cx="420" cy="180" r="15" fill="#2ecc71" stroke="#27ae60" stroke-width="2"/>
+  <text x="420" y="185" font-family="Arial, sans-serif" font-size="12" font-weight="bold" text-anchor="middle" fill="white">c</text>
+  
+  <circle cx="450" cy="230" r="15" fill="#9b59b6" stroke="#8e44ad" stroke-width="2"/>
+  <text x="450" y="235" font-family="Arial, sans-serif" font-size="12" font-weight="bold" text-anchor="middle" fill="white">0</text>
+  
+  <!-- Pentagon edges -->
+  <line x1="442" y1="94" x2="428" y2="116" stroke="#666" stroke-width="2"/>
+  <line x1="458" y1="94" x2="472" y2="116" stroke="#666" stroke-width="2"/>
+  
+  <line x1="420" y1="145" x2="420" y2="165" stroke="#666" stroke-width="2"/>
+  <line x1="472" y1="144" x2="428" y2="166" stroke="#666" stroke-width="2"/>
+  
+  <line x1="428" y1="194" x2="442" y2="216" stroke="#666" stroke-width="2"/>
+  
+  <!-- Properties boxes -->
+  <rect x="50" y="250" width="200" height="80" fill="white" stroke="#ddd" stroke-width="1"/>
+  <text x="55" y="270" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#333">Diamond M₃:</text>
+  <text x="55" y="285" font-family="Arial, sans-serif" font-size="11" fill="#666">• Not distributive</text>
+  <text x="55" y="300" font-family="Arial, sans-serif" font-size="11" fill="#666">• a ∧ (b ∨ c) = a ∧ 1 = a</text>
+  <text x="55" y="315" font-family="Arial, sans-serif" font-size="11" fill="#666">• (a ∧ b) ∨ (a ∧ c) = 0 ∨ 0 = 0</text>
+  
+  <rect x="350" y="250" width="200" height="80" fill="white" stroke="#ddd" stroke-width="1"/>
+  <text x="355" y="270" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#333">Pentagon N₅:</text>
+  <text x="355" y="285" font-family="Arial, sans-serif" font-size="11" fill="#666">• Not distributive</text>
+  <text x="355" y="300" font-family="Arial, sans-serif" font-size="11" fill="#666">• Not modular</text>
+  <text x="355" y="315" font-family="Arial, sans-serif" font-size="11" fill="#666">• Minimal non-distributive</text>
+</svg>
