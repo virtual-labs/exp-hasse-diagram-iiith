@@ -16,21 +16,6 @@
    - Section 9.6: Partial Orderings
    - Section 9.7: Hasse Diagrams
 
-### Online Educational Resources
-
-#### Tutorials and Articles
-
-1. GeeksforGeeks:
-   - [Hasse Diagram](https://www.geeksforgeeks.org/hasse-diagram-in-discrete-mathematics/)
-   - [Partial Orders and Their Properties](https://www.geeksforgeeks.org/partial-orders-and-their-properties/)
-
-2. Brilliant.org:
-   - [Partial Orders](https://brilliant.org/wiki/partial-orders/)
-   - [Hasse Diagrams](https://brilliant.org/wiki/hasse-diagrams/)
-
-3. Mathematics Stack Exchange:
-   - [Understanding Hasse Diagrams](https://math.stackexchange.com/questions/tagged/hasse-diagrams)
-   - [Poset Visualization](https://math.stackexchange.com/questions/tagged/posets)
 
 #### Video Lectures
 
@@ -47,22 +32,3 @@
 1. Wolfram Demonstrations Project:
    - [Hasse Diagram Explorer](https://demonstrations.wolfram.com/topics/hasse-diagrams)
    - [Visualizing Partial Orders](https://demonstrations.wolfram.com/topics/partial-orders)
-
-### Research Papers and Advanced Reading
-
-1. Freese, R. (2004). "Automated Lattice Drawing." In *Concept Lattices*, Lecture Notes in Computer Science, vol 2961. Springer.
-   - Focuses on algorithms for drawing Hasse diagrams of lattices
-
-2. Skiena, S. (2008). *The Algorithm Design Manual* (2nd ed.). Springer.
-   - Section 14.4: Partial Orders
-   - Applications of partial orders in computer science
-
-### Additional Resources
-
-1. Online Tools:
-   - [LATEX-Draw](https://latexdraw.com/) - For creating Hasse diagrams
-   - [GraphOnline](https://graphonline.ru/en/) - For visualizing partial orders
-
-2. Practice Problems:
-   - [Project Euler](https://projecteuler.net/) - Problems involving order theory
-   - [Math Exercises](https://www.math-exercises.com/) - Partial orders and Hasse diagrams
