@@ -1,0 +1,52 @@
+<svg width="400" height="300" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="400" height="300" fill="#fafafa" stroke="#ddd" stroke-width="1"/>
+  
+  <!-- Title -->
+  <text x="200" y="25" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#333">
+    Divisibility Poset on {1,2,3,4,6,12}
+  </text>
+  
+  <!-- Nodes -->
+  <circle cx="200" cy="50" r="20" fill="#4a90e2" stroke="#2c5aa0" stroke-width="2"/>
+  <text x="200" y="56" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="white">12</text>
+  
+  <circle cx="130" cy="120" r="20" fill="#4a90e2" stroke="#2c5aa0" stroke-width="2"/>
+  <text x="130" y="126" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="white">4</text>
+  
+  <circle cx="270" cy="120" r="20" fill="#4a90e2" stroke="#2c5aa0" stroke-width="2"/>
+  <text x="270" y="126" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="white">6</text>
+  
+  <circle cx="100" cy="190" r="20" fill="#4a90e2" stroke="#2c5aa0" stroke-width="2"/>
+  <text x="100" y="196" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="white">2</text>
+  
+  <circle cx="300" cy="190" r="20" fill="#4a90e2" stroke="#2c5aa0" stroke-width="2"/>
+  <text x="300" y="196" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="white">3</text>
+  
+  <circle cx="200" cy="260" r="20" fill="#e74c3c" stroke="#c0392b" stroke-width="2"/>
+  <text x="200" y="266" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="white">1</text>
+  
+  <!-- Edges -->
+  <line x1="185" y1="68" x2="145" y2="102" stroke="#666" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <line x1="215" y1="68" x2="255" y2="102" stroke="#666" stroke-width="2" marker-end="url(#arrowhead)"/>
+  
+  <line x1="115" y1="138" x2="115" y2="172" stroke="#666" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <line x1="255" y1="138" x2="115" y2="172" stroke="#666" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <line x1="285" y1="138" x2="285" y2="172" stroke="#666" stroke-width="2" marker-end="url(#arrowhead)"/>
+  
+  <line x1="115" y1="208" x2="185" y2="242" stroke="#666" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <line x1="285" y1="208" x2="215" y2="242" stroke="#666" stroke-width="2" marker-end="url(#arrowhead)"/>
+  
+  <!-- Arrow marker -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" 
+            refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#666"/>
+    </marker>
+  </defs>
+  
+  <!-- Legend -->
+  <text x="20" y="280" font-family="Arial, sans-serif" font-size="12" fill="#666">
+    Red node: minimal element (1)
+  </text>
+</svg>

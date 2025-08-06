@@ -1,0 +1,58 @@
+<svg width="500" height="400" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="500" height="400" fill="#fafafa" stroke="#ddd" stroke-width="1"/>
+  
+  <!-- Title -->
+  <text x="250" y="25" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#333">
+    Weak Order on Permutations of {1,2,3}
+  </text>
+  
+  <!-- Top element -->
+  <circle cx="250" cy="60" r="20" fill="#e74c3c" stroke="#c0392b" stroke-width="2"/>
+  <text x="250" y="67" font-family="Arial, sans-serif" font-size="11" font-weight="bold" text-anchor="middle" fill="white">321</text>
+  
+  <!-- Second level -->
+  <circle cx="150" cy="130" r="20" fill="#3498db" stroke="#2980b9" stroke-width="2"/>
+  <text x="150" y="137" font-family="Arial, sans-serif" font-size="11" font-weight="bold" text-anchor="middle" fill="white">231</text>
+  
+  <circle cx="350" cy="130" r="20" fill="#3498db" stroke="#2980b9" stroke-width="2"/>
+  <text x="350" y="137" font-family="Arial, sans-serif" font-size="11" font-weight="bold" text-anchor="middle" fill="white">312</text>
+  
+  <!-- Third level -->
+  <circle cx="100" cy="200" r="20" fill="#2ecc71" stroke="#27ae60" stroke-width="2"/>
+  <text x="100" y="207" font-family="Arial, sans-serif" font-size="11" font-weight="bold" text-anchor="middle" fill="white">213</text>
+  
+  <circle cx="200" cy="200" r="20" fill="#2ecc71" stroke="#27ae60" stroke-width="2"/>
+  <text x="200" y="207" font-family="Arial, sans-serif" font-size="11" font-weight="bold" text-anchor="middle" fill="white">132</text>
+  
+  <circle cx="400" cy="200" r="20" fill="#2ecc71" stroke="#27ae60" stroke-width="2"/>
+  <text x="400" y="207" font-family="Arial, sans-serif" font-size="11" font-weight="bold" text-anchor="middle" fill="white">312</text>
+  
+  <!-- Bottom element -->
+  <circle cx="250" cy="270" r="20" fill="#9b59b6" stroke="#8e44ad" stroke-width="2"/>
+  <text x="250" y="277" font-family="Arial, sans-serif" font-size="11" font-weight="bold" text-anchor="middle" fill="white">123</text>
+  
+  <!-- Edges -->
+  <line x1="235" y1="77" x2="165" y2="113" stroke="#666" stroke-width="2"/>
+  <line x1="265" y1="77" x2="335" y2="113" stroke="#666" stroke-width="2"/>
+  
+  <line x1="135" y1="147" x2="115" y2="183" stroke="#666" stroke-width="2"/>
+  <line x1="165" y1="147" x2="185" y2="183" stroke="#666" stroke-width="2"/>
+  
+  <line x1="335" y1="147" x2="215" y2="183" stroke="#666" stroke-width="2"/>
+  <line x1="365" y1="147" x2="385" y2="183" stroke="#666" stroke-width="2"/>
+  
+  <line x1="115" y1="217" x2="235" y2="253" stroke="#666" stroke-width="2"/>
+  <line x1="185" y1="217" x2="235" y2="253" stroke="#666" stroke-width="2"/>
+  <line x1="385" y1="217" x2="265" y2="253" stroke="#666" stroke-width="2"/>
+  
+  <!-- Inversion annotations -->
+  <text x="50" y="320" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#333">Inversions:</text>
+  <text x="50" y="335" font-family="Arial, sans-serif" font-size="11" fill="#666">123: 0 inversions</text>
+  <text x="50" y="350" font-family="Arial, sans-serif" font-size="11" fill="#666">213: 1 inversion (2,1)</text>
+  <text x="50" y="365" font-family="Arial, sans-serif" font-size="11" fill="#666">321: 3 inversions</text>
+  
+  <text x="250" y="320" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#333">Covering = Adjacent Transposition</text>
+  <text x="250" y="335" font-family="Arial, sans-serif" font-size="11" fill="#666">Each edge represents swapping adjacent elements</text>
+  <text x="250" y="350" font-family="Arial, sans-serif" font-size="11" fill="#666">This creates the Bruhat order on S₃</text>
+</svg>
