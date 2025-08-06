@@ -1,11 +1,11 @@
-#### 1. Introduction to Relations
+## 1. Introduction to Relations
 
 Before diving into partial orders, let's establish the foundational concept of relations and their properties.
 
-##### Definition: Binary Relation
+### Definition: Binary Relation
 A **binary relation** $ R $ on a set $ A $ is a subset of $ A \times A $. We write $ aRb $ (or $ a \sim b $) to mean $ (a,b) \in R $.
 
-##### Key Properties of Relations
+### Key Properties of Relations
 
 **Reflexivity**: A relation $ R $ on set $ A $ is reflexive if for every element $ a \in A $, we have $ aRa $.
 - Example: " $ = $ " on real numbers (every number equals itself)
@@ -23,9 +23,9 @@ A **binary relation** $ R $ on a set $ A $ is a subset of $ A \times A $. We wri
 - Example: "is married to" relation
 - Counter-example: "is parent of" relation
 
-#### 2. Partial Orders: Definition and Properties
+## 2. Partial Orders: Definition and Properties
 
-##### Definition: Partial Order (Poset)
+### Definition: Partial Order (Poset)
 A **partial order** (or **partially ordered set**, abbreviated as **poset**) is a set $ P $ together with a binary relation $ \preceq $ that satisfies three properties:
 
 1. **Reflexivity**: For all $ a \in P $, $ a \preceq a $
@@ -34,7 +34,7 @@ A **partial order** (or **partially ordered set**, abbreviated as **poset**) is 
 
 We denote a partially ordered set as $ (P, \preceq) $ or simply $ P $ when the relation is clear from context.
 
-#### Strict Partial Order
+## Strict Partial Order
 The **strict partial order** associated with $ \preceq $ is the relation $ \prec $ defined by:
 $ a \prec b $ if and only if $ a \preceq b $ and $ a \neq b $
 
@@ -43,13 +43,13 @@ This relation is:
 - **Asymmetric**: If $ a \prec b $, then not $ b \prec a $
 - **Transitive**: If $ a \prec b $ and $ b \prec c $, then $ a \prec c $
 
-##### Comparability
+### Comparability
 Two elements $ a $ and $ b $ in a poset are **comparable** if either $ a \preceq b $ or $ b \preceq a $ (or both, in which case $ a = b $).
 Elements that are not comparable are called **incomparable**.
 
-#### 3. Examples of Partial Orders
+## 3. Examples of Partial Orders
 
-##### Example 1: Divisibility on Natural Numbers
+### Example 1: Divisibility on Natural Numbers
 Let $ N = \{1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12\} $ and define $ a \preceq b $ if $ a $ divides $ b $.
 
 **Verification**:
@@ -66,7 +66,7 @@ Let $ N = \{1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12\} $ and define $ a \preceq b $
 
 **Incomparable pairs**: $ (2,3) $, $ (2,5) $, $ (3,4) $, $ (3,5) $, $ (4,5) $, $ (4,6) $, $ (4,9) $, etc.
 
-##### Example 2: Subset Relation on Power Set
+### Example 2: Subset Relation on Power Set
 Let $ A = \{a, b, c\} $ and consider $ \mathcal{P}(A) = \{\emptyset, \{a\}, \{b\}, \{c\}, \{a,b\}, \{a,c\}, \{b,c\}, \{a,b,c\}\} $ with the subset relation $ \subseteq $.
 
 **Structure**:
@@ -78,14 +78,14 @@ Let $ A = \{a, b, c\} $ and consider $ \mathcal{P}(A) = \{\emptyset, \{a\}, \{b\
 
 **Incomparable pairs**: $ (\{a\}, \{b\}) $, $ (\{a\}, \{c\}) $, $ (\{b\}, \{c\}) $, $ (\{a,b\}, \{a,c\}) $, $ (\{a,b\}, \{b,c\}) $, $ (\{a,c\}, \{b,c\}) $
 
-##### Example 3: Lexicographic Order on Strings
+### Example 3: Lexicographic Order on Strings
 Consider the set of strings $ \{a, aa, ab, b, ba, bb\} $ with lexicographic ordering (dictionary order).
 
 **Order**: $ a \preceq aa \preceq ab \preceq b \preceq ba \preceq bb $
 
 This is actually a **total order** since every pair of elements is comparable.
 
-##### Example 4: Information Order on Partial Functions
+### Example 4: Information Order on Partial Functions
 Let $ X = \{1, 2, 3\} $ and $ Y = \{a, b\} $. Consider partial functions from $ X $ to $ Y $, ordered by information content: $ f \preceq g $ if $ \text{dom}(f) \subseteq \text{dom}(g) $ and $ f(x) = g(x) $ for all $ x \in \text{dom}(f) $.
 
 **Example functions**:
@@ -97,26 +97,26 @@ Let $ X = \{1, 2, 3\} $ and $ Y = \{a, b\} $. Consider partial functions from $ 
 
 **Relations**: $ f_1 \preceq $ everything, $ f_2 \preceq f_4 $, $ f_2 \preceq f_5 $, $ f_3 \preceq f_4 $, but $ f_2 $ and $ f_3 $ are incomparable.
 
-#### 4. Special Elements in Partial Orders
+## 4. Special Elements in Partial Orders
 
-#### Minimal and Maximal Elements
+## Minimal and Maximal Elements
 - An element $ a $ is **minimal** if there is no element $ b $ such that $ b \prec a $
 - An element $ a $ is **maximal** if there is no element $ b $ such that $ a \prec b $
 
 **Note**: A poset may have multiple minimal/maximal elements, or none at all.
 
-#### Least and Greatest Elements
+## Least and Greatest Elements
 - An element $ a $ is the **least element** (or **minimum**) if $ a \preceq b $ for all $ b $ in the poset
 - An element $ a $ is the **greatest element** (or **maximum**) if $ b \preceq a $ for all $ b $ in the poset
 
 **Note**: If they exist, least and greatest elements are unique.
 
-##### Lower and Upper Bounds
+### Lower and Upper Bounds
 For a subset $ S $ of a poset $ P $:
 - An element $ a \in P $ is a **lower bound** of $ S $ if $ a \preceq s $ for all $ s \in S $
 - An element $ a \in P $ is an **upper bound** of $ S $ if $ s \preceq a $ for all $ s \in S $
 
-##### Infimum and Supremum
+### Infimum and Supremum
 For a subset $ S $ of a poset $ P $:
 - The **infimum** (or **greatest lower bound**, **glb**) of $ S $ is the greatest element among all lower bounds of $ S $
 - The **supremum** (or **least upper bound**, **lub**) of $ S $ is the least element among all upper bounds of $ S $
@@ -125,17 +125,17 @@ For a subset $ S $ of a poset $ P $:
 - $ \inf(\{4,6\}) = 2 $ (greatest common divisor)
 - $ \sup(\{4,6\}) = 12 $ (least common multiple)
 
-#### 5. Hasse Diagrams: Construction and Interpretation
+## 5. Hasse Diagrams: Construction and Interpretation
 
-##### Definition and Purpose
+### Definition and Purpose
 A **Hasse diagram** is a graphical representation of a finite partially ordered set that eliminates redundant information by showing only the "covering" relations.
 
-##### Covering Relation
+### Covering Relation
 Element $ a $ **covers** element $ b $ (written $ b \lessdot a $) if:
 1. $ b \prec a $ ($ b $ is strictly less than $ a $)
 2. There is no element $ c $ such that $ b \prec c \prec a $
 
-##### Construction Rules for Hasse Diagrams
+### Construction Rules for Hasse Diagrams
 
 1. **Vertices**: Each element of the poset is represented by a vertex
 2. **Edges**: Draw an edge between $ a $ and $ b $ if one covers the other
@@ -144,7 +144,7 @@ Element $ a $ **covers** element $ b $ (written $ b \lessdot a $) if:
 5. **No self-loops**: Reflexivity is implicit
 6. **Direction**: Lower elements are "less than" higher elements
 
-##### Step-by-Step Construction Example
+### Step-by-Step Construction Example
 
 **Poset**: Divisibility on $ \{1, 2, 3, 4, 6, 12\} $
 
@@ -169,7 +169,7 @@ Element $ a $ **covers** element $ b $ (written $ b \lessdot a $) if:
 
 ![Divisibility poset diagram](images/hasse_diagram_1.svg)
 
-##### Reading Hasse Diagrams
+### Reading Hasse Diagrams
 
 **To determine if $ a \preceq b $**: Check if there's an upward path from $ a $ to $ b $.
 
@@ -178,9 +178,9 @@ Element $ a $ **covers** element $ b $ (written $ b \lessdot a $) if:
 - $ 2 \preceq 6 $? Yes (direct path: $ 2 \to 6 $)
 - $ 4 \preceq 6 $? No (no upward path from 4 to 6)
 
-#### 6. Advanced Examples and Applications
+## 6. Advanced Examples and Applications
 
-##### Example 1: Boolean Algebra B₃
+### Example 1: Boolean Algebra B₃
 Consider the Boolean algebra of subsets of a 3-element set $ \{x, y, z\} $.
 
 **Elements**: All 8 subsets of $ \{x, y, z\} $
@@ -199,7 +199,7 @@ Consider the Boolean algebra of subsets of a 3-element set $ \{x, y, z\} $.
 - Meet ($ \wedge $): $ \{x,y\} \wedge \{x,z\} = \{x\} $
 - Complement: $ \overline{\{x\}} = \{y,z\} $
 
-##### Example 2: Non-Distributive Lattices
+### Example 2: Non-Distributive Lattices
 
 ![Diamond and Pentagon Lattices](images/diamond_pentagon_diagrams.svg)
 
@@ -213,7 +213,7 @@ Since $ a \neq 0 $, distributivity fails.
 **Pentagon $ N_5 $ failure**:
 Similarly demonstrates non-distributivity and is also non-modular.
 
-##### Example 3: Partition Lattice
+### Example 3: Partition Lattice
 Consider all partitions of the set $ \{1, 2, 3, 4\} $ ordered by refinement.
 
 **Partitions**:
@@ -224,7 +224,7 @@ Consider all partitions of the set $ \{1, 2, 3, 4\} $ ordered by refinement.
 
 **Refinement relation**: $ P_1 \preceq P_2 $ if every block of $ P_1 $ is contained in some block of $ P_2 $.
 
-##### Example 4: Young Diagrams
+### Example 4: Young Diagrams
 Young diagrams (used in representation theory) form a partial order under inclusion.
 
 **Example Young diagrams for partitions of 4**:
@@ -233,7 +233,7 @@ Young diagrams (used in representation theory) form a partial order under inclus
 
 **Ordering**: $ \lambda \preceq \mu $ if the Young diagram of $ \lambda $ fits inside the Young diagram of $ \mu $.
 
-##### Example 5: Dominance Order on Permutations
+### Example 5: Dominance Order on Permutations
 Consider permutations of $ \{1, 2, 3\} $ with the weak order.
 
 **Permutations**: $ 123, 132, 213, 231, 312, 321 $
@@ -254,7 +254,7 @@ Consider permutations of $ \{1, 2, 3\} $ with the weak order.
 
 **Geometric Interpretation**: This poset corresponds to regions in the braid arrangement, with maximal chains corresponding to reduced expressions in the symmetric group.
 
-##### Example 6: Ideal Lattice in Ring Theory
+### Example 6: Ideal Lattice in Ring Theory
 In the ring $ \mathbb{Z}_{12} = \mathbb{Z}/12\mathbb{Z} $, consider the lattice of ideals ordered by inclusion.
 
 **Ideals**: $ (0), (1), (2), (3), (4), (6), (12) $ where $ (n) $ represents the ideal generated by $ n $.
@@ -265,7 +265,7 @@ In the ring $ \mathbb{Z}_{12} = \mathbb{Z}/12\mathbb{Z} $, consider the lattice 
 - $ (12) \subseteq (4) \subseteq (2) \subseteq (1) $
 - $ (0) \subseteq $ everything
 
-##### Example 7: Formal Concept Analysis
+### Example 7: Formal Concept Analysis
 Given a formal context $ \mathcal{K} = (G, M, I) $ where $ G $ is a set of objects, $ M $ is a set of attributes, and $ I \subseteq G \times M $:
 
 **Example Context**:
@@ -283,17 +283,17 @@ Given a formal context $ \mathcal{K} = (G, M, I) $ where $ G $ is a set of objec
 
 The set of all formal concepts forms a complete lattice called the **concept lattice**.
 
-#### 7. Comparing Partial Orders
+## 7. Comparing Partial Orders
 
-##### Order Isomorphism
+### Order Isomorphism
 Two posets $ (P, \preceq_P) $ and $ (Q, \preceq_Q) $ are **order isomorphic** if there exists a bijection $ f: P \to Q $ such that:
 $ a \preceq_P b $ if and only if $ f(a) \preceq_Q f(b) $
 
-##### Order Embedding
+### Order Embedding
 A function $ f: P \to Q $ between posets is an **order embedding** if:
 $ a \preceq_P b $ if and only if $ f(a) \preceq_Q f(b) $
 
-##### Chain and Antichain
+### Chain and Antichain
 - A **chain** is a totally ordered subset (all elements are comparable)
 - An **antichain** is a subset where no two distinct elements are comparable
 
@@ -301,17 +301,17 @@ $ a \preceq_P b $ if and only if $ f(a) \preceq_Q f(b) $
 
 ![Chains and Antichains Visualization](images/chain_antichain_diagram.svg)
 
-##### Width and Height
+### Width and Height
 - The **width** of a poset is the size of its largest antichain
 - The **height** of a poset is the size of its longest chain minus 1
 
 
 
-#### 8. Real-World Applications
+## 8. Real-World Applications
 
 ![Real-World Applications](images/applications_diagram.svg)
 
-##### Software Version Control
+### Software Version Control
 Git commits form a partial order where commit $ A \preceq $ commit $ B $ if $ A $ is an ancestor of $ B $. Merge operations create elements with multiple immediate predecessors.
 
 **Example**: Consider commits $ c_1, c_2, c_3, c_4 $ where:
@@ -321,7 +321,7 @@ Git commits form a partial order where commit $ A \preceq $ commit $ B $ if $ A 
 
 This creates the poset: $ c_1 \prec c_2, c_3 \prec c_4 $
 
-#### Task Dependencies in Project Management
+### Task Dependencies in Project Management
 In project management, tasks form a partial order where task $ A \preceq $ task $ B $ if $ A $ must be completed before $ B $ can begin. Critical path analysis finds maximal chains.
 
 **Example Project Tasks**:
@@ -334,7 +334,7 @@ In project management, tasks form a partial order where task $ A \preceq $ task 
 
 **Dependencies**: $ T_1 \prec T_2, T_3 $ and $ T_2 \prec T_4 $ and $ T_3 \prec T_5 $ and $ T_4, T_5 \prec T_6 $
 
-##### Information Systems and Query Specificity
+### Information Systems and Query Specificity
 In databases, queries can be ordered by specificity. A more specific query provides a subset of results from a less specific query.
 
 **Example SQL queries on employee database**:
@@ -344,7 +344,7 @@ In databases, queries can be ordered by specificity. A more specific query provi
 
 **Order**: $ Q_3 \prec Q_2 \prec Q_1 $ (more specific queries return subsets)
 
-##### Concurrency Theory and Causality
+### Concurrency Theory and Causality
 Events in concurrent systems form a partial order where $ A \preceq B $ if event $ A $ causally precedes event $ B $. Incomparable events represent potentially simultaneous occurrences.
 
 **Lamport's Happens-Before Relation**:
@@ -354,7 +354,7 @@ $ e_1 \to e_2 $ if:
 2. $ e_1 $ is a send event and $ e_2 $ is the corresponding receive event
 3. There exists $ e_3 $ such that $ e_1 \to e_3 $ and $ e_3 \to e_2 $ (transitivity)
 
-##### Concept Hierarchies in Knowledge Representation
+### Concept Hierarchies in Knowledge Representation
 In ontologies and knowledge graphs, concepts form partial orders where $ A \preceq B $ if concept $ A $ is more specific than concept $ B $.
 
 **Example Taxonomy**:
@@ -362,7 +362,7 @@ $ \text{Golden Retriever} \prec \text{Dog} \prec \text{Mammal} \prec \text{Anima
 
 **Multiple inheritance**: $ \text{Platypus} \prec \text{Mammal}, \text{Egg-laying Animal} $
 
-##### Preference Modeling in Decision Theory
+### Preference Modeling in Decision Theory
 Consumer preferences often form partial orders where incomparable elements represent different trade-offs.
 
 **Example**: Smartphone preferences based on (price, performance, battery life)
@@ -372,7 +372,7 @@ Consumer preferences often form partial orders where incomparable elements repre
 
 **Relations**: $ C \prec A $ and $ C \prec B $, but $ A $ and $ B $ are incomparable (different trade-offs)
 
-##### Security Classification Lattices
+### Security Classification Lattices
 Security classifications form lattices where information can flow from lower to higher classification levels.
 
 **Example Military Classification**:
@@ -380,7 +380,7 @@ Security classifications form lattices where information can flow from lower to 
 - Compartments: Need-to-know basis creates additional partial order structure
 - Clearance: Person can access information at their level and below
 
-##### Resource Allocation in Distributed Systems
+### Resource Allocation in Distributed Systems
 Resource allocations form partial orders based on availability and priority.
 
 **Example Computing Resources**:
@@ -390,7 +390,7 @@ Resource allocations form partial orders based on availability and priority.
 
 **Relations**: $ A_1 \prec A_3 $ and $ A_2 \prec A_3 $, but $ A_1 $ and $ A_2 $ are incomparable
 
-#### Basic Exercises
+## Basic Exercises
 
 **Exercise 1**: Determine which of the following relations on $ \{1, 2, 3, 4\} $ are partial orders:
 
@@ -401,22 +401,33 @@ b) $ R_2 = \{(1,1), (2,2), (3,3), (4,4), (1,2), (2,1), (3,4)\} $
 c) $ R_3 = \{(1,1), (2,2), (3,3), (4,4), (1,2), (1,3), (1,4), (2,4), (3,4)\} $
 
 **Exercise 2**: For the poset of divisors of 24, find:
+
 a) All maximal elements
+
 b) All minimal elements  
+
 c) The greatest element (if it exists)
+
 d) The least element (if it exists)
 
 **Exercise 3**: Draw the Hasse diagram for:
+
 a) The poset of divisors of 30
+
 b) The poset $ \mathcal{P}(\{a,b\}) $ ordered by $ \subseteq $
+
 c) The poset $ \{1,2,3,4,5,6\} $ with $ a \preceq b $ iff $ a|b $
 
-##### Intermediate Exercises
+### Intermediate Exercises
 
 **Exercise 4**: In the lattice of subsets of $ \{1,2,3,4\} $, find:
+
 a) $ \{1,2\} \vee \{2,3\} $
+
 b) $ \{1,2\} \wedge \{2,3\} $  
+
 c) $ \{1,3\} \vee \{2,4\} $
+
 d) $ \{1,2,3\} \wedge \{2,3,4\} $
 
 **Exercise 5**: Prove that in any poset, if a greatest element exists, then it is unique.
@@ -430,6 +441,7 @@ d) $ \{1,2,3\} \wedge \{2,3,4\} $
     a
 ```
 a) Which elements are comparable to $ b $?
+
 b) What are $ \sup(\{b,c\}) $ and $ \inf(\{b,c\}) $?
 
 
