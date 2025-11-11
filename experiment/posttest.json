@@ -2,7 +2,7 @@
   "version": 2.0,
   "questions": [
     {
-    "question": "A poset (partially ordered set) is a pair $(P, \\preceq)$ consisting of a set $P$ and a binary relation $\\preceq$ on $P$ that satisfies which of the following properties?",
+    "question": "A poset (partially ordered set) is a pair $(P, ⪯)$ consisting of a set $P$ and a binary relation $⪯$ on $P$ that satisfies which of the following properties?",
     "answers": {
       "a": "Reflexive, Transitive, and Antisymmetric",
       "b": "Reflexive and Symmetric",
@@ -10,7 +10,7 @@
       "d": "Reflexive, Transitive, and Symmetric"
     },
     "explanations": {
-      "a": "Correct! A partial order must satisfy all three properties: reflexivity ($a \\preceq a$ for all $a \\in P$), transitivity (if $a \\preceq b$ and $b \\preceq c$ then $a \\preceq c$), and antisymmetry (if $a \\preceq b$ and $b \\preceq a$ then $a = b$).",
+      "a": "Correct! A partial order must satisfy all three properties: reflexivity ($a ⪯ a$ for all $a \\in P$), transitivity (if $a ⪯ b$ and $b ⪯ c$ then $a ⪯ c$), and antisymmetry (if $a ⪯ b$ and $b ⪯ a$ then $a = b$).",
       "b": "Incorrect. While reflexivity is needed, symmetry would make it an equivalence relation, not a partial order. Antisymmetry and transitivity are required instead.",
       "c": "Incorrect. While transitivity and antisymmetry are needed, reflexivity is also essential for a partial order - every element must be related to itself.",
       "d": "Incorrect. A partial order cannot be symmetric as this would contradict antisymmetry. A symmetric and transitive relation would be an equivalence relation instead."
@@ -19,11 +19,11 @@
     "difficulty": "beginner"
     },
     {
-      "question": "In a poset $(P, \\preceq)$, an element $m \\in P$ is **maximal** if which of the following is true?",
+      "question": "In a poset $(P, ⪯)$, an element $m \\in P$ is **maximal** if which of the following is true?",
       "answers": {
         "a": "There exists no element $a \\in P$ such that $a \\prec m$ (i.e., no element is strictly greater than $m$)",
         "b": "There exists no element $a \\in P$ such that $m \\prec a$ (i.e., no element is strictly greater than $m$)",
-        "c": "There exists no element $a \\in P$ such that $a \\preceq m$ (i.e., no element is at most $m$)",
+        "c": "There exists no element $a \\in P$ such that $a ⪯ m$ (i.e., no element is at most $m$)",
         "d": "$m$ is related to every other element in $P$"
       },
       "explanations": {
@@ -53,7 +53,7 @@
       "difficulty": "intermediate"
     },
     {
-      "question": "Let $A = \\{1, 2, 3, 6, 9, 18\\}$ and let $\\preceq$ be the divisibility relation where $a \\preceq b$ if $a$ divides $b$. The number of edges in the Hasse diagram of $(A, \\preceq)$ is",
+      "question": "Let $A = \\{1, 2, 3, 6, 9, 18\\}$ and let $⪯$ be the divisibility relation where $a ⪯ b$ if $a$ divides $b$. The number of edges in the Hasse diagram of $(A, ⪯)$ is",
       "answers": {
         "a": "7",
         "b": "5",
@@ -138,7 +138,7 @@
       "difficulty": "advanced"
     },
     {
-      "question": "Given a finite partially ordered set $(P, \\preceq)$, which of the following statements is TRUE about the relationship between minimal elements and maximum-sized antichains?",
+      "question": "Given a finite partially ordered set $(P, ⪯)$, which of the following statements is TRUE about the relationship between minimal elements and maximum-sized antichains?",
       "answers": {
         "a": "The set of minimal elements is always a maximum-sized antichain",
         "b": "Every maximum-sized antichain must contain all minimal elements",
