@@ -278,13 +278,13 @@ In the ring $ \mathbb{Z}_{12} = \mathbb{Z}/12\mathbb{Z} $, consider the lattice 
 
 ### Example 7: Formal Concept Analysis
 Given a formal context $ \mathcal{K} = (G, M, I) $ where $ G $ is a set of objects, $ M $ is a set of attributes, and $ I \subseteq G \times M $:
+**Example Context**
 
-**Example Context**:
-| Objects | Attribute 1 | Attribute 2 | Attribute 3 |
-|---------|-------------|-------------|-------------|
-| Object A | ✓ | ✗ | ✓ |
-| Object B | ✓ | ✓ | ✗ |
-| Object C | ✗ | ✓ | ✓ |
+| Object   | Attribute 1 | Attribute 2 | Attribute 3 |
+|----------|:-----------:|:-----------:|:-----------:|
+| Object A | ✓           | ✗           | ✓           |
+| Object B | ✓           | ✓           | ✗           |
+| Object C | ✗           | ✓           | ✓           |
 
 **Galois Connection**: For $ A \subseteq G $ and $ B \subseteq M $:
 - $ A' = \{m \in M : \forall g \in A, (g,m) \in I\} $
@@ -445,6 +445,7 @@ d) $ \{1,2,3\} \wedge \{2,3,4\} $
 
 **Exercise 6**: Given the poset with Hasse diagram:
 ```
+
     d
    / \
   b   c
