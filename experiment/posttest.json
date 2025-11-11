@@ -2,35 +2,35 @@
   "version": 2.0,
   "questions": [
     {
-    "question": "A poset or partially ordered set A is a pair, ( B, preceq ) of a set B whose elements are called the vertices of A and obeys following rules",
+    "question": "A poset (partially ordered set) is a pair $(P, \\preceq)$ consisting of a set $P$ and a binary relation $\\preceq$ on $P$ that satisfies which of the following properties?",
     "answers": {
-      "a": "Reflexive, Transitive and  Anti-symmetric",
-      "b": "Reflexive, symmetric",
-      "c": "Transitive , Anti-symmetric",
-      "d": "Reflexive, Transitive and symmetric"
+      "a": "Reflexive, Transitive, and Antisymmetric",
+      "b": "Reflexive and Symmetric",
+      "c": "Transitive and Antisymmetric",
+      "d": "Reflexive, Transitive, and Symmetric"
     },
     "explanations": {
-      "a": "Correct! A partial order must satisfy all three properties: reflexivity (x ≤ x), transitivity (if x ≤ y and y ≤ z then x ≤ z), and antisymmetry (if x ≤ y and y ≤ x then x = y).",
-      "b": "Incorrect. While reflexivity is needed, symmetry would make it an equivalence relation, not a partial order. Antisymmetry and transitivity are missing.",
+      "a": "Correct! A partial order must satisfy all three properties: reflexivity ($a \\preceq a$ for all $a \\in P$), transitivity (if $a \\preceq b$ and $b \\preceq c$ then $a \\preceq c$), and antisymmetry (if $a \\preceq b$ and $b \\preceq a$ then $a = b$).",
+      "b": "Incorrect. While reflexivity is needed, symmetry would make it an equivalence relation, not a partial order. Antisymmetry and transitivity are required instead.",
       "c": "Incorrect. While transitivity and antisymmetry are needed, reflexivity is also essential for a partial order - every element must be related to itself.",
-      "d": "Incorrect. A partial order cannot be symmetric as this would contradict antisymmetry. Symmetry would make it an equivalence relation instead."
+      "d": "Incorrect. A partial order cannot be symmetric as this would contradict antisymmetry. A symmetric and transitive relation would be an equivalence relation instead."
     },
     "correctAnswer": "a",
     "difficulty": "beginner"
     },
     {
-      "question": "___ elements of A are those where a preceq c in A does not contain elements in c",
+      "question": "In a poset $(P, \\preceq)$, an element $m \\in P$ is **maximal** if which of the following is true?",
       "answers": {
-        "a": "minimal",
-        "b": "maximal",
-        "c": "both a and b",
-        "d": "None of the above"
+        "a": "There exists no element $a \\in P$ such that $a \\prec m$ (i.e., no element is strictly greater than $m$)",
+        "b": "There exists no element $a \\in P$ such that $m \\prec a$ (i.e., no element is strictly greater than $m$)",
+        "c": "There exists no element $a \\in P$ such that $a \\preceq m$ (i.e., no element is at most $m$)",
+        "d": "$m$ is related to every other element in $P$"
       },
       "explanations": {
-        "a": "Incorrect. Minimal elements are those where there are no smaller elements, but the question describes elements with no larger elements.",
-        "b": "Correct! Maximal elements are precisely those elements c where there exists no element a in the set such that c ≤ a (except c itself).",
-        "c": "Incorrect. The definition given specifically describes maximal elements. Minimal elements have a different definition (no elements below them).",
-        "d": "Incorrect. The definition clearly describes maximal elements in a partial order."
+        "a": "Incorrect. This describes the condition for a minimal element. We want no element greater than $m$, not smaller.",
+        "b": "Correct! A maximal element is one where there is no element strictly greater than it. In other words, if $m \\prec a$ for some $a \\in P$, then we have a contradiction.",
+        "c": "Incorrect. This condition is too restrictive and would only apply to a least element. Maximal elements only require no strictly greater elements.",
+        "d": "Incorrect. Maximal elements need not be comparable to all other elements; they just need to have no elements strictly above them."
       },
       "correctAnswer": "b",
       "difficulty": "beginner"
@@ -53,7 +53,7 @@
       "difficulty": "intermediate"
     },
     {
-      "question": "If A = {1, 2, 3, 6, 9, 18], then number of edges in the poset diagram of poset [A; /] is",
+      "question": "Let $A = \\{1, 2, 3, 6, 9, 18\\}$ and let $\\preceq$ be the divisibility relation where $a \\preceq b$ if $a$ divides $b$. The number of edges in the Hasse diagram of $(A, \\preceq)$ is",
       "answers": {
         "a": "7",
         "b": "5",
@@ -61,7 +61,7 @@
         "d": "8"
       },
       "explanations": {
-        "a": "Correct! In the divisibility relation, we have edges 1→2, 1→3, 2→6, 3→6, 3→9, 6→18, and 9→18, making exactly 7 edges.",
+        "a": "Correct! In the divisibility relation, we have edges $1 \\to 2$, $1 \\to 3$, $2 \\to 6$, $3 \\to 6$, $3 \\to 9$, $6 \\to 18$, and $9 \\to 18$, making exactly 7 edges (covering relations).",
         "b": "Incorrect. 5 edges would miss some direct divisibility relations in the set.",
         "c": "Incorrect. 6 edges would miss one of the direct cover relations in the divisibility partial order.",
         "d": "Incorrect. 8 edges would include a transitive relation that should be omitted in the Hasse diagram."
@@ -138,20 +138,20 @@
       "difficulty": "advanced"
     },
     {
-      "question": "Given a finite partially ordered set (P,≤), what is the relationship between its minimal elements and maximal antichains?",
+      "question": "Given a finite partially ordered set $(P, \\preceq)$, which of the following statements is TRUE about the relationship between minimal elements and maximum-sized antichains?",
       "answers": {
-        "a": "The set of minimal elements is always a maximal antichain",
-        "b": "Every maximal antichain must contain all minimal elements",
-        "c": "The number of minimal elements equals the size of every maximal antichain",
-        "d": "The set of minimal elements forms an antichain, but may not be maximal"
+        "a": "The set of minimal elements is always a maximum-sized antichain",
+        "b": "Every maximum-sized antichain must contain all minimal elements",
+        "c": "The set of minimal elements forms an antichain, but it may not be of maximum size",
+        "d": "The number of minimal elements always equals the size of every maximum-sized antichain"
       },
       "explanations": {
         "a": "Incorrect. The set of minimal elements may be properly contained in a larger antichain.",
-        "b": "Incorrect. A maximal antichain might not contain any minimal elements at all.",
-        "c": "Incorrect. The size of maximal antichains can differ from the number of minimal elements.",
-        "d": "Correct! Minimal elements are pairwise incomparable (forming an antichain), but there might be larger antichains containing elements that aren't minimal."
+        "b": "Incorrect. A maximum-sized antichain might not contain any minimal elements at all.",
+        "c": "Correct! The minimal elements are pairwise incomparable (forming an antichain), but there can exist larger antichains that contain elements which are not minimal.",
+        "d": "Incorrect. The size of maximum-sized antichains can differ from the number of minimal elements. By Dilworth's theorem, the maximum antichain size equals the minimum number of chains needed to partition the poset, not necessarily the number of minimal elements."
       },
-      "correctAnswer": "d",
+      "correctAnswer": "c",
       "difficulty": "advanced"
     }
   ]
