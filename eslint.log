@@ -1,0 +1,18 @@
+
+/home/runner/work/exp-hasse-diagram-iiith/exp-hasse-diagram-iiith/experiment/simulation/Hasse.js
+  401:36  warning  'allEdges' is defined but never used             no-unused-vars
+  955:10  warning  'updateElementCount' is defined but never used   no-unused-vars
+  961:10  warning  'updateRelationType' is defined but never used   no-unused-vars
+  967:10  warning  'generateNewRelation' is defined but never used  no-unused-vars
+  973:10  warning  'clearDiagram' is defined but never used         no-unused-vars
+  979:10  warning  'checkDiagram' is defined but never used         no-unused-vars
+  985:10  warning  'showHint' is defined but never used             no-unused-vars
+  991:10  warning  'undoLastEdge' is defined but never used         no-unused-vars
+
+/home/runner/work/exp-hasse-diagram-iiith/exp-hasse-diagram-iiith/experiment/simulation/mobile-detection.js
+  393:7   warning  'mobileDetection' is assigned a value but never used  no-unused-vars
+  396:38  warning  'module' is not defined                               no-undef
+  397:3   warning  'module' is not defined                               no-undef
+
+✖ 11 problems (0 errors, 11 warnings)
+
