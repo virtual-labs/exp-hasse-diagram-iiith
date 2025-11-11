@@ -201,6 +201,17 @@ Consider the Boolean algebra of subsets of a 3-element set $ \{x, y, z\} $.
 
 ### Example 2: Non-Distributive Lattices
 
+#### Definition: Distributive Lattice
+A lattice $ L $ is **distributive** if for all elements $ a, b, c \in L $:
+$$a \wedge (b \vee c) = (a \wedge b) \vee (a \wedge c)$$
+
+Equivalently, a lattice is distributive if:
+$$a \vee (b \wedge c) = (a \vee b) \wedge (a \vee c)$$
+
+These two conditions are equivalent in the context of lattices. Many common lattices are distributive (e.g., Boolean algebras, divisibility posets), but some important lattices fail this property.
+
+---
+
 ![Diamond and Pentagon Lattices](images/diamond_pentagon_diagrams.svg)
 
 The **Diamond lattice $ M_3 $** and **Pentagon lattice $ N_5 $** are fundamental examples of non-distributive lattices. These are the smallest lattices that fail the distributive property.
