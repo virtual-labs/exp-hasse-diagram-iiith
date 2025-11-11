@@ -2,7 +2,7 @@
   "version": 2.0,
   "questions": [
     {
-    "question": "A poset (partially ordered set) is a pair $(P, ⪯)$ consisting of a set $P$ and a binary relation $⪯$ on $P$ that satisfies which of the following properties?",
+    "question": "Which properties must a binary relation ⪯ on a set P satisfy for (P, ⪯) to be a poset (partially ordered set)?",
     "answers": {
       "a": "Reflexive, Transitive, and Antisymmetric",
       "b": "Reflexive and Symmetric",
@@ -19,7 +19,7 @@
     "difficulty": "beginner"
     },
     {
-      "question": "In a poset $(P, ⪯)$, an element $m \\in P$ is **maximal** if which of the following is true?",
+      "question": "Which of the following best defines a maximal element $m \\in P$ in a poset $(P, ⪯)$?",
       "answers": {
         "a": "There exists no element $a \\in P$ such that $a \\prec m$ (i.e., no element is strictly greater than $m$)",
         "b": "There exists no element $a \\in P$ such that $m \\prec a$ (i.e., no element is strictly greater than $m$)",
@@ -36,7 +36,7 @@
       "difficulty": "beginner"
     },
     {
-      "question": "Let A={1,2,3,4,6,24,36,72}, Let preceq be the partial order defined by A preceq B if a divides b. Number of edges in the Hasse diagram of (A,preceq) is",
+      "question": "Let A={1,2,3,4,6,24,36,72}, Let ⪯ be the partial order defined by A ⪯ B if a divides b. Number of edges in the Hasse diagram of (A,⪯) is",
       "answers": {
         "a": "14",
         "b": "10",
